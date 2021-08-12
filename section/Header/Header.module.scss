@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.herokale {
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    background-image: url(../../public/kalelight.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.herotitle {
+  font-size: 3rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.green {
+  color: #3ccd9d;
+  font-weight: bold;
+}
+
+.letter {
+  transform: rotate(-90deg);
+}
