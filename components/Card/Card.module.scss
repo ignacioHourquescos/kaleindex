@@ -1,0 +1,31 @@
+
+.container{
+
+   width:400px;
+   border:1px solid red;
+   padding:2rem;
+   height:800px;
+}
+
+.shapeContainer{
+   position:relative;
+
+   .shapeLeft{
+      position:absolute;
+      left:0;
+      top:0;
+      transform: translateY(90px);
+   }
+
+   .shapeRight{
+      position:absolute;
+      right:0;
+      top:0;
+   }
+}
+
+.image{
+   padding-left:4rem;
+}
+
+
