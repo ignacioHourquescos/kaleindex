@@ -25,14 +25,18 @@
 
    .image_container{
       margin-left:4rem;
+      margin-top:2rem;
       // border:1px solid red;
    }
    
    h3{
-      padding:0 2rem;
+      padding:0.5rem 2rem;
       margin:0;
+      transform:translateY(-20px);
       color:grey;
-
+      font-size:1rem;
+      position:absolute;
+      background-color: rgba(255, 255, 255, 0.311);
 
    }
 
@@ -59,14 +63,14 @@
       position:absolute;
       left:0;
       top:0;
-      transform: translateY(90px);
+      transform: translateY(60px);
    }
 
    .shapeRight{
       position:absolute;
       right:0;
       top:0;
-      transform: translateY(900px);
+      transform: translateY(50px);
       
    }
 }
