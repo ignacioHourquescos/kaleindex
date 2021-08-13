@@ -1,15 +1,23 @@
 import ss from './Header.module.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const Header = () => {
 
    return (
       <>
+
          <div className={ss.desktopview}>
             <div className={ss.container}>
                <div className={ss.herokale}>
                </div>
                <div className={ss.herotitle}>
-                  <div className={ss.letter}>X</div>
+
+                  <ScrollAnimation animateIn="animate__flipInX" animateOnce={true} duration={1.1}>
+                     <div className={ss.letter}>X</div>
+                  </ScrollAnimation>
+
+
                   <div className={ss.letter}>E</div>
                   <div className={ss.letter}>D</div>
                   <div className={ss.letter}>N</div>

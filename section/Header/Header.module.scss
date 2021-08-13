@@ -13,11 +13,10 @@
   @media (min-width: 1000px) {
     display: unset;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 60%;
     .herodesc {
-        width: 70%;
-
+      width: 70%;
     }
   }
 }
@@ -37,6 +36,15 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  :nth-child(5){
+     
+     transform: rotate(-90deg) translateX(20px);;
+
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 4rem;
+  }
 }
 
 .green {
@@ -45,7 +53,7 @@
 }
 
 .letter {
-  transform: rotate(-90deg);
+ /*  transform: rotate(-90deg); */
 }
 
 @media (min-width: 1000px) {
@@ -53,7 +61,5 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    
   }
 }
