@@ -13,20 +13,16 @@ const Header = () => {
                </div>
                <div className={ss.herotitle}>
 
-                  <ScrollAnimation animateIn="animate__flipInX" animateOnce={true} duration={1.1}>
-                     <div className={ss.letter}>X</div>
-                  </ScrollAnimation>
-
-
-                  <div className={ss.letter}>E</div>
-                  <div className={ss.letter}>D</div>
-                  <div className={ss.letter}>N</div>
-                  <div className={ss.letter}>I</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.9s"}}>X</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.8s"}}>E</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.7s"}}>D</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.6s"}}>N</div>
+                  <div className={ss.letter} style={{ transalateX:"(20px)", textAlign:"center", transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.5s"}}>I</div>
                   <span className={ss.green}>
-                     <div className={ss.letter}>E</div>
-                     <div className={ss.letter}>L</div>
-                     <div className={ss.letter}>A</div>
-                     <div className={ss.letter}>K</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.4s"}}>E</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.3s"}}>L</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.2s"}}>A</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.5s"}}>K</div>
                   </span>
 
                </div>
