@@ -1,0 +1,65 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1000px) {
+    width: 60%;
+  }
+}
+.left {
+  display: none;
+  justify-content: center;
+  @media (min-width: 1000px) {
+    display: unset;
+    height: 100%;
+    font-size: 1.4rem;
+    width: 60%;
+    .herodesc {
+      width: 70%;
+    }
+  }
+}
+
+.herokale {
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  background-image: url(../../public/kalelight.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.herotitle {
+  font-size: 3rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  :nth-child(5){
+     
+     transform: rotate(-90deg) translateX(20px);;
+
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 4rem;
+  }
+}
+
+.green {
+  color: #3ccd9d;
+  font-weight: bold;
+}
+
+.letter {
+ /*  transform: rotate(-90deg); */
+}
+
+@media (min-width: 1000px) {
+  .desktopview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
