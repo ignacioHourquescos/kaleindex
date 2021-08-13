@@ -51,24 +51,45 @@ const portfolioArray = [
    {
       type:"webApp",
       name:"Renova",
-      color:"#FFC93F",
-      image:"/renova.png",
+      color:"#B7CFB7",
+      image:"/renovacel.png",
       brief:"pagina web muy linda e intersantsdasd ads sde pagina web muy linda e intersante"
    },
    {
       type:"Institucional",
       name:"Corominola",
-      color:"#959595",
-      image:"/renova.png",
+      color:"#c7dbda",
+      image:"/corominolacel.png",
       brief:"pagina web muy linda e intersante"
    },
    {
       type:"Institucional",
-      name:"Corominola",
-      color:"#959595",
-      image:"/renova.png",
+      name:"CGHTE",
+      color:"#55CBCD",
+      image:"/camaracel.png",
       brief:"pagina web muy linda e intersante"
-  }
+  },
+  {
+   type:"webApp",
+   name:"Polo Sales",
+   color:"#CCE2CB",
+   image:"/polosalescel.png",
+   brief:"pagina web muy linda e intersante"
+},
+{
+   type:"E-Commerce",
+   name:"La Galera",
+   color:"#9AB7D3",
+   image:"/lagaleracel.png",
+   brief:"pagina web muy linda e intersante"
+},
+{
+   type:"E-Commerce",
+   name:"El Fuerte",
+   color:"#FFDAC1",
+   image:"/elfuertecel.png",
+   brief:"pagina web muy linda e intersante"
+}
 ]
 
 
