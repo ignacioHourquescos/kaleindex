@@ -3,16 +3,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1000px) {
+    width: 60%;
+  }
+}
+.left {
+  display: none;
+  justify-content: center;
+  @media (min-width: 1000px) {
+    display: unset;
+    height: 100%;
+    font-size: 1.2rem;
+    width: 60%;
+    .herodesc {
+        width: 70%;
+
+    }
+  }
 }
 
 .herokale {
-    position: absolute;
-    height: 100%;
-    width: 120%;
-    background-image: url(../../public/kalelight.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  background-image: url(../../public/kalelight.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .herotitle {
   font-size: 3rem;
@@ -29,4 +46,14 @@
 
 .letter {
   transform: rotate(-90deg);
+}
+
+@media (min-width: 1000px) {
+  .desktopview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+  }
 }
