@@ -13,16 +13,16 @@ const Header = () => {
                </div>
                <div className={ss.herotitle}>
 
-                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.9s"}}>X</div>
-                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.8s"}}>E</div>
-                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.7s"}}>D</div>
-                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.6s"}}>N</div>
-                  <div className={ss.letter} style={{ transalateX:"(20px)", textAlign:"center", transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.5s"}}>I</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.9s"}}>X</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.8s"}}>E</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.7s"}}>D</div>
+                  <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.6s"}}>N</div>
+                  <div className={ss.letter} style={{ transalateX:"(20px)", textAlign:"center", transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.5s"}}>I</div>
                   <span className={ss.green}>
-                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.4s"}}>E</div>
-                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.3s"}}>L</div>
-                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "1.2s"}}>A</div>
-                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.5s"}}>K</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.4s"}}>E</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.3s"}}>L</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.2s"}}>A</div>
+                     <div className={ss.letter} style={{ transform:"rotate(-90deg)",animation: "fadeInDown",  animationDuration: "0.1s"}}>K</div>
                   </span>
 
                </div>
