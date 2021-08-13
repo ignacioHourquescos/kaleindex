@@ -1,7 +1,7 @@
 import ss from './Card.module.scss'
 import Image from 'next/image'
 
-const Card =() =>{
+const Card =({type, name, img, brief}) =>{
 
 return(
    <div className={ss.container}>
@@ -23,12 +23,13 @@ return(
          </div>
       </div>
 
-      <h5>institucional</h5>
-      <h1>Nombrddddddddde</h1>
+      <h5>{type}</h5>
+      <h1>{name}</h1>
       <div className={ss.image_container}>
-         <Image src={"/renova.png"} width="280px" height="550px"/>
+      {/* <Image src={`${img})`} width="280px" height="550px"/> */}
+         {/* <Image src={"/renova.png"} width="280px" height="550px"/> */}
       </div>
-      <h3 className={ss.breif}>Se trabajo en una pagina web my linda e interesante para vneder mas</h3>
+      <h3 className={ss.breif}>{brief}</h3>
 
    </div>
 )
