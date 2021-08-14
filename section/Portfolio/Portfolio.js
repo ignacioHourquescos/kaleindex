@@ -5,7 +5,7 @@ import { useEffect }                                           from "react";
 import ss                                                      from './Portfolio.module.scss'
 import Image                                                   from 'next/image'
 import { useInView }                                           from "react-intersection-observer";
-import Link                                                    from 'next/Link'
+
 
 
 
