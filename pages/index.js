@@ -8,11 +8,7 @@ const Home = () => {
     <>
       <Header/>
       <Card/>   
-      <Card/>   
-      <Card/>   
-      <Card/>   
-      <Card/>   
-      <Card/>   
+
       {/* <Portfolio/>    */}
 
     </>

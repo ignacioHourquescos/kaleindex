@@ -5,6 +5,7 @@ import  { useEffect } from "react";
 import ss from './Portfolio2.module.scss'
 import Image from 'next/image'
 import { useInView } from "react-intersection-observer";
+import Link from 'next/Link'
 
  const Card =() =>{
    const x = useMotionValue(0);
@@ -46,7 +47,7 @@ import { useInView } from "react-intersection-observer";
      opacity: 1,
      transition: {
        when: "beforeChildren",
-       staggerChildren: 0.1,
+       staggerChildren: 0.2,
      },
    },
    hidden: {
@@ -68,8 +69,9 @@ import { useInView } from "react-intersection-observer";
  }
 
  return(
-    <>   
+   <>
     { portfolioArray.map(element =>
+     <a href="https://www.w3schools.com">   
     <div className={ss.container}>
       <div className={ss.shapeContainer}>
    
@@ -105,15 +107,17 @@ import { useInView } from "react-intersection-observer";
               dragElastic={0.82}
               whileTap={{ cursor: "grabbing" }}>
               <div  className={ss.image_container}>
-         <Image src={element.image} width="230px" height="450px"/>
+         <Image src={element.image} width="230px" height="400px"/>
          </div>
        </FadeInWhenVisible>
        
        <h3 className={ss.brief}>{element.brief}</h3>
 
     </div>
+       </a>
     )}
     </>
+ 
 )}
 
 export default Card;
@@ -139,7 +143,7 @@ const portfolioArray = [
       name:"Renova",
       color:"#B7CFB7",
       image:"/renovacel.png",
-      brief:"pagina web muy linda e intersantsdasd ads sde pagina web muy linda e intersante"
+      brief:"A partir de un sistema de gestión en SQL, se hizo una conexión via Node.js, generando una vista web para mostrar precios y stock de manera dinámica"
    },
    {
       type:"Institucional",

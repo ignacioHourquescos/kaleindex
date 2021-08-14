@@ -31,14 +31,14 @@
   background-repeat: no-repeat;
 }
 .herotitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: lighter;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   :nth-child(5){
      
-     transform: translateX(20px);
+   //   transform: translateX(20px);
      
 
   }
