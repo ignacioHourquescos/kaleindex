@@ -4,9 +4,19 @@ import { motion, useMotionValue, useAnimation, useTransform } from "framer-motio
 import { useEffect } from "react";
 import ss from './Portfolio.module.scss'
 import Image from 'next/image'
-import { useInView } from "react-intersection-observer";
-
-
+import { useInView } from "react-intersection-observer"
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3 } from 'react-icons/fa';
+import { FaNode } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { FaBootstrap } from 'react-icons/fa';
+import { FaSass } from 'react-icons/fa';
+import { FaJs } from 'react-icons/fa';
+import { FaDatabase } from 'react-icons/fa';
+import { FaGoogle } from 'react-icons/fa';
+import { SiNextDotJs } from 'react-icons/si'
+import { SiFirebase } from 'react-icons/si'
+import { FaArrowCircleRight } from 'react-icons/fa';
 
 
 const Card = () => {
@@ -14,7 +24,6 @@ const Card = () => {
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
-
 
 
   function FadeInWhenVisible({ children }) {
@@ -72,56 +81,58 @@ const Card = () => {
   return (
     <>
       {portfolioArray.map(element =>
+      <section style={{ scrollSnapAlign:"center"}}>
+        <a key={element.name} href={element.link}>
+          <div className={ss.container}>
+            <div className={ss.shapeContainer}>
 
-        <section style={{ scrollSnapAlign: "center" }}>
-          <a key={element.name} href="https://www.w3schools.com">
-            <div className={ss.container}>
-              <div className={ss.shapeContainer}>
-
-                <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
-                  <motion.div variants={item} className={ss.shapeLeft}>
-                    {shapeLeft(element.color)}
-                  </motion.div>
-                  <motion.div variants={item} className={ss.shapeRight}>
-                    {shapeRight(element.color)}
-                  </motion.div>
-                </FadeInWhenVisible>
-
-                <motion.div className={ss.kale_container} initial="hidden" animate="visible" variants={list} >
-                  <motion.div variants={item}>
-                    <Image src={"/kale.png"} width="100px" height="100px" />
-                  </motion.div>
-                  <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
-                    <motion.div variants={item}>{icon}   </motion.div>
-                    <motion.div variants={item}>{icon}   </motion.div>
-                    <motion.div variants={item}>{icon}   </motion.div>
-                    <motion.div variants={item}>{icon}   </motion.div>
-                    <motion.div variants={item}>{icon}   </motion.div>
-                  </FadeInWhenVisible>
+              <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
+                <motion.div variants={item} className={ss.shapeLeft}>
+                  {shapeLeft(element.color)}
                 </motion.div>
-
-              </div>
-
-              <h5>{element.type}</h5>
-              <h1>{element.name}</h1>
-
-              <FadeInWhenVisible className={ss.image_container} style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 2 }}
-                drag
-                dragElastic={0.82}
-                whileTap={{ cursor: "grabbing" }}>
-                <div className={ss.image_container}>
-                  <Image src={element.image} width="230px" height="400px" />
-                </div>
+                <motion.div variants={item} className={ss.shapeRight}>
+                  {shapeRight(element.color)}
+                </motion.div>
               </FadeInWhenVisible>
 
-              <h3 className={ss.brief}>{element.brief}</h3>
+              <motion.div className={ss.kale_container} initial="hidden" animate="visible" variants={list} >
+                <motion.div variants={item}>
+                  <Image src={"/kale.png"} width="100px" height="100px" />
+                </motion.div>
+                <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
+                  <motion.div variants={item}>{element.icons.html == 1 ? <FaHtml5 size={27} color="#3f3c3c" /> : ""}   </motion.div>
+                  <motion.div variants={item}>{element.icons.css == 1 ? <FaCss3 size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                  <motion.div variants={item}>{element.icons.node == 1 ? <FaNode size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                  <motion.div variants={item}>{element.icons.react == 1 ? <FaReact size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                  <motion.div variants={item}>{element.icons.sass == 1 ? <FaSass size={27} color="#3f3c3c" /> : ""}    </motion.div>
+                  <motion.div variants={item}>{element.icons.bootstrap == 1 ? <FaBootstrap size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                  <motion.div variants={item}>{element.icons.mysql == 1 ? <FaDatabase size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                  <motion.div variants={item}>{element.icons.google == 1 ? <FaGoogle size={27} color="#3f3c3c" /> : ""} </motion.div>
+                  <motion.div variants={item}>{element.icons.next == 1 ? <SiNextDotJs size={27} color="#3f3c3c" /> : ""} </motion.div>
+                  <motion.div variants={item}>{element.icons.firebase == 1 ? <SiFirebase size={27} color="#3f3c3c" /> : ""} </motion.div>
+                </FadeInWhenVisible>
+              </motion.div>
 
             </div>
-          </a>
+
+            <h5>{element.type}</h5>
+            <h1>{element.name}</h1>
+
+            <FadeInWhenVisible className={ss.image_container} style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 2 }}
+              drag
+              dragElastic={0.82}
+              whileTap={{ cursor: "grabbing" }}>
+              <div className={ss.image_container}>
+                <Image src={element.image} width="230px" height="400px" />
+              </div>
+            </FadeInWhenVisible>
+
+            <h3 className={ss.brief}>{element.brief}</h3>
+
+          </div>
+        </a>
         </section>
-
       )}
-
     </>
 
   )
@@ -139,42 +150,55 @@ const portfolioArray = [
     name: "Renova",
     color: "#B7CFB7",
     image: "/renovacel.png",
-    brief: "A partir de un sistema de gestión en SQL, se hizo una conexión via Node.js, generando una vista web para mostrar precios y stock de manera dinámica"
+    brief: "A partir de un sistema de gestión en SQL, se hizo una conexión via Node.js, nera dinámica",
+    icons: { html: 1, css: 1, react: 0, node: 1, bootstrap: 1, mysql: 1, firebase: 0, sass: 0, js: 1 },
+    link: "https://listasrenova.netlify.app/views/html/indexofertas.html"
   },
+
   {
     type: "Institucional",
     name: "Corominola",
     color: "#c7dbda",
     image: "/corominolacel.png",
-    brief: "pagina web muy linda e intersante"
+    brief: "pagina web muy linda e intersante",
+    icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 1, next: 1 },
   },
   {
     type: "Institucional",
     name: "CGHTE",
     color: "#55CBCD",
     image: "/camaracel.png",
-    brief: "pagina web muy linda e intersante"
+    brief: "pagina web muy linda e intersante",
+    icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
+    link: "https://camaraquilmes.netlify.app",
   },
   {
     type: "webApp",
     name: "Polo Sales",
     color: "#CCE2CB",
     image: "/polosalescel.png",
-    brief: "pagina web muy linda e intersante"
+    brief: "pagina web muy linda e intersante",
+    icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
+    link: "https://polosales.netlify.app"
   },
   {
     type: "E-Commerce",
     name: "La Galera",
     color: "#9AB7D3",
     image: "/lagaleracel.png",
-    brief: "pagina web muy linda e intersante"
+    brief: "pagina web muy linda e intersante",
+    icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 1, js: 0, google: 1, firebase: 1 },
+    link: "https://lagalera.netlify.app"
   },
   {
     type: "E-Commerce",
     name: "El Fuerte",
     color: "#FFDAC1",
     image: "/elfuertecel.png",
-    brief: "pagina web muy linda e intersante"
+    brief: "pagina web muy linda e intersante",
+    icons: { html: 1, css: 1, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 0, google: 1, next: 0, firebase: 0 },
+    link: "https://www.mayoristaelfuerte.com",
+
   }
 ]
 
