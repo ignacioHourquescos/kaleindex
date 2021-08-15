@@ -1,18 +1,55 @@
 
 🟢agregar los links 
-
-🟢agergar iconos (NACHO)
-
+🟢agergar iconos 
 🟢Redireccionar al dominio
+🟢Scroll snap
+
+1/////
+Nosotros
+Somos kaleIndex.buscamos combinar diseño, logica e innovacion para crear 
+productos digitales de alto valor agregado. Abiertos siempre a nuevos desafios
+
+Ustedes
+Hang Kuchen, Sporleder & Rodriguez Morales buscan construir su identidad 
+digital a través de una web instituicional, a la altura de firma capa
+
+2////
+El proyecto
+se hara un pagina web a medida. contemplando las mejores practicas de diseño e usabilidad.
+ Seccion Home
+ Seccion Quienes Somos
+ Formulario de contacto
+ Nuestros serivcios
+ Publicacoines
+
+Aspectos tecnicos
+Diseño responsivo
+seccion de blog automadministrable
+optimizada para motores de busqueda
+
+3///
+Investigacion (1 semana)
+Etapa en la que buscamos referencias. Tatno de estudios colegas como de paginas de afuera.
+Se define a grandes rasgos cual es la identidad que se le va a dar
+
+Prototipado (1 semana)
+Se monta un prototipo con informacion de muestra de la pagina principal para poder ver el look and feel de la web. 
+Se discute cualquier ajuste que se pueda hacer 
+
+Beta (1 semana)
+Se construye toda la web a un 80%. se definen ulitmos ajustes. Recibimos la informacio que quedara en la pagina
 
 
+Lanzamiento (1 semana)
+Se lanza la web en el dominio deseado. 
+
+*En cada instnacia se pacta una reuninnon virtual para definir ajustes
+
+
+hacer seccion de presupuesto
 definir descipriones 
 ver tema titulos
 agregar el texto abajo del header 
 
 
 
-<meta name="description" content="agencia creativa digital">
-<meta property="og:title" content="kaleindex" />
-<meta property="og:description" content="agencia creativa digital" />
-<meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
