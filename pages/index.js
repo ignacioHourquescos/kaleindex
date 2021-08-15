@@ -13,7 +13,7 @@ const Home = () => {
         <meta name="description" content="agencia creativa digital" />
         <meta property="og:title" content="kaleindex" />
         <meta property="og:description" content="agencia creativa digital" />
-        <meta property="og:image" content="/kale.png" />
+        <meta property="og:image" content="/kaleillustration.jpg" />
       </Head>
       <section style={{ scrollSnapAlign: "start" }}>
         <Header />
