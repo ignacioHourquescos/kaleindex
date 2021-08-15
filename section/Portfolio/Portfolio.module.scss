@@ -1,3 +1,14 @@
+.desktop_view {
+   display: flex;
+   flex-direction: column;
+   @media (min-width: 1000px){
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left: 45%;
+   }
+}
+
+
 
 .container{
 
@@ -9,7 +20,7 @@
    margin-left: auto;
    margin-right: auto;
    @media (min-width: 400px){
-      width:350px;
+      width: 350px;
    }
 
    h5{
