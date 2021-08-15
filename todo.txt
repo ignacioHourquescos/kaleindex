@@ -1,8 +1,10 @@
 
 🟢agregar los links 
-agregar el texto abajo del header 
+
 🟢agergar iconos (NACHO)
+🟢Redireccionar al dominio
+
+
 definir descipriones 
 ver tema titulos
-
-Redireccionar al dominio
+agregar el texto abajo del header 
