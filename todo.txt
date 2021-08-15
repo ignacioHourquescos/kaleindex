@@ -2,9 +2,17 @@
 🟢agregar los links 
 
 🟢agergar iconos (NACHO)
+
 🟢Redireccionar al dominio
 
 
 definir descipriones 
 ver tema titulos
 agregar el texto abajo del header 
+
+
+
+<meta name="description" content="agencia creativa digital">
+<meta property="og:title" content="kaleindex" />
+<meta property="og:description" content="agencia creativa digital" />
+<meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
