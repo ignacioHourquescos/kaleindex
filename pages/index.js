@@ -9,9 +9,9 @@ const Home = () => {
       <section style={{ scrollSnapAlign: "start" }}>
         <Header />
       </section>
-      <section style={{ scrollSnapAlign: "start" }}>
+      
         <Card />
-      </section>
+      
 
       {/* <Portfolio/>    */}
 
