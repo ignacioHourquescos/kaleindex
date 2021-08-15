@@ -80,59 +80,61 @@ const Card = () => {
 
   return (
     <>
-      {portfolioArray.map(element =>
-      <section style={{ scrollSnapAlign:"center"}}>
-        <a key={element.name} href={element.link}>
-          <div className={ss.container}>
-            <div className={ss.shapeContainer}>
+      <div className={ss.desktop_view}>
+        {portfolioArray.map(element =>
+          <section style={{ scrollSnapAlign: "center" }}>
+            <a key={element.name} href={element.link}>
+              <div className={ss.container}>
+                <div className={ss.shapeContainer}>
 
-              <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
-                <motion.div variants={item} className={ss.shapeLeft}>
-                  {shapeLeft(element.color)}
-                </motion.div>
-                <motion.div variants={item} className={ss.shapeRight}>
-                  {shapeRight(element.color)}
-                </motion.div>
-              </FadeInWhenVisible>
+                  <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
+                    <motion.div variants={item} className={ss.shapeLeft}>
+                      {shapeLeft(element.color)}
+                    </motion.div>
+                    <motion.div variants={item} className={ss.shapeRight}>
+                      {shapeRight(element.color)}
+                    </motion.div>
+                  </FadeInWhenVisible>
 
-              <motion.div className={ss.kale_container} initial="hidden" animate="visible" variants={list} >
-                <motion.div variants={item}>
-                  <Image src={"/kale.png"} width="100px" height="100px" />
-                </motion.div>
-                <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
-                  <motion.div variants={item}>{element.icons.html == 1 ? <FaHtml5 size={27} color="#3f3c3c" /> : ""}   </motion.div>
-                  <motion.div variants={item}>{element.icons.css == 1 ? <FaCss3 size={27} color="#3f3c3c" /> : ""}  </motion.div>
-                  <motion.div variants={item}>{element.icons.node == 1 ? <FaNode size={27} color="#3f3c3c" /> : ""}  </motion.div>
-                  <motion.div variants={item}>{element.icons.react == 1 ? <FaReact size={27} color="#3f3c3c" /> : ""}  </motion.div>
-                  <motion.div variants={item}>{element.icons.sass == 1 ? <FaSass size={27} color="#3f3c3c" /> : ""}    </motion.div>
-                  <motion.div variants={item}>{element.icons.bootstrap == 1 ? <FaBootstrap size={27} color="#3f3c3c" /> : ""}  </motion.div>
-                  <motion.div variants={item}>{element.icons.mysql == 1 ? <FaDatabase size={27} color="#3f3c3c" /> : ""}  </motion.div>
-                  <motion.div variants={item}>{element.icons.google == 1 ? <FaGoogle size={27} color="#3f3c3c" /> : ""} </motion.div>
-                  <motion.div variants={item}>{element.icons.next == 1 ? <SiNextDotJs size={27} color="#3f3c3c" /> : ""} </motion.div>
-                  <motion.div variants={item}>{element.icons.firebase == 1 ? <SiFirebase size={27} color="#3f3c3c" /> : ""} </motion.div>
+                  <motion.div className={ss.kale_container} initial="hidden" animate="visible" variants={list} >
+                    <motion.div variants={item}>
+                      <Image src={"/kale.png"} width="100px" height="100px" />
+                    </motion.div>
+                    <FadeInWhenVisible initial="hidden" animate="visible" variants={list} >
+                      <motion.div variants={item}>{element.icons.html == 1 ? <FaHtml5 size={27} color="#3f3c3c" /> : ""}   </motion.div>
+                      <motion.div variants={item}>{element.icons.css == 1 ? <FaCss3 size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                      <motion.div variants={item}>{element.icons.node == 1 ? <FaNode size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                      <motion.div variants={item}>{element.icons.react == 1 ? <FaReact size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                      <motion.div variants={item}>{element.icons.sass == 1 ? <FaSass size={27} color="#3f3c3c" /> : ""}    </motion.div>
+                      <motion.div variants={item}>{element.icons.bootstrap == 1 ? <FaBootstrap size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                      <motion.div variants={item}>{element.icons.mysql == 1 ? <FaDatabase size={27} color="#3f3c3c" /> : ""}  </motion.div>
+                      <motion.div variants={item}>{element.icons.google == 1 ? <FaGoogle size={27} color="#3f3c3c" /> : ""} </motion.div>
+                      <motion.div variants={item}>{element.icons.next == 1 ? <SiNextDotJs size={27} color="#3f3c3c" /> : ""} </motion.div>
+                      <motion.div variants={item}>{element.icons.firebase == 1 ? <SiFirebase size={27} color="#3f3c3c" /> : ""} </motion.div>
+                    </FadeInWhenVisible>
+                  </motion.div>
+
+                </div>
+
+                <h5>{element.type}</h5>
+                <h1>{element.name}</h1>
+
+                <FadeInWhenVisible className={ss.image_container} style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 2 }}
+                  drag
+                  dragElastic={0.82}
+                  whileTap={{ cursor: "grabbing" }}>
+                  <div className={ss.image_container}>
+                    <Image src={element.image} width="230px" height="400px" />
+                  </div>
                 </FadeInWhenVisible>
-              </motion.div>
 
-            </div>
+                <h3 className={ss.brief}>{element.brief}</h3>
 
-            <h5>{element.type}</h5>
-            <h1>{element.name}</h1>
-
-            <FadeInWhenVisible className={ss.image_container} style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 2 }}
-              drag
-              dragElastic={0.82}
-              whileTap={{ cursor: "grabbing" }}>
-              <div className={ss.image_container}>
-                <Image src={element.image} width="230px" height="400px" />
               </div>
-            </FadeInWhenVisible>
-
-            <h3 className={ss.brief}>{element.brief}</h3>
-
-          </div>
-        </a>
-        </section>
-      )}
+            </a>
+          </section>
+        )}
+      </div>
     </>
 
   )
