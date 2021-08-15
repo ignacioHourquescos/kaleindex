@@ -11,6 +11,12 @@ body {
   background-repeat: repeat;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
 a {
   color: inherit;
   text-decoration: none;
