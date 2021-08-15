@@ -1,14 +1,14 @@
 
 .container{
 
-   width:100%;;
+   width:100%;
    // border:1px solid red;
    padding:2rem;
    margin-bottom:2rem;
    height:700px;
    margin-left: auto;
    margin-right: auto;
-   @media only (min-width: 400px){
+   @media (min-width: 400px){
       width:350px;
    }
 
@@ -88,3 +88,13 @@
 
 
 
+/* .snap_container{
+   scroll-behavior: smooth;
+   scroll-snap-type: y mandatory;
+   overflow-y: scroll;
+ } */
+
+
+/* .section_snap{
+   scroll-snap-align: center;
+} */
