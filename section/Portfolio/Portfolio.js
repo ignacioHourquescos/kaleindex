@@ -82,7 +82,7 @@ const Card = () => {
     <>
       <div className={ss.desktop_view}>
         {portfolioArray.map(element =>
-          <section style={{ scrollSnapAlign: "center" }}>
+          <section style={{ scrollSnapAlign: "center", scrollSnapStop: "always" }}>
             <a key={element.name} href={element.link}>
               <div className={ss.container}>
                 <div className={ss.shapeContainer}>
