@@ -1,7 +1,11 @@
 
 import Header from '../section/Header/Header'
 import Card from '../section/Portfolio/Portfolio'
+import HeroDescMob from '../section/HeroDescMob/HeroDescMob'
 import Head from 'next/head'
+import { MobileView } from 'react-device-detect';
+
+
 
 
 const Home = () => {
@@ -18,6 +22,9 @@ const Home = () => {
       <section style={{ scrollSnapAlign: "start" }}>
         <Header />
       </section>
+      <MobileView>
+        <HeroDescMob/>
+      </MobileView>
 
       <Card />
 

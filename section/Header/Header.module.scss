@@ -9,9 +9,9 @@
 }
 .left {
   display: none;
-  justify-content: center;
   @media (min-width: 1000px) {
-    display: unset;
+    display: flex;
+    justify-content: center;
     height: 100%;
     font-size: 1.8rem;
     line-height: 1.6em;
@@ -37,19 +37,10 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  :nth-child(5){
-     
-   //   transform: translateX(20px);
-     
 
-  }
   @media (min-width: 700px) {
-   font-size: 3rem;
- }
-
-
-
-
+    font-size: 3rem;
+  }
 }
 
 .green {
@@ -58,8 +49,7 @@
 }
 
 .letter {
-
- z-index:10;
+  z-index: 10;
 }
 
 @media (min-width: 1000px) {
