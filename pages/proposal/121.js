@@ -44,7 +44,7 @@ const Proposal = () =>{
       <meta name="description" content="agencia creativa digital" />
       <meta property="og:title" content="kaleindex" />
       <meta property="og:description" content="agencia creativa digital" />
-      <meta property="og:image" content="/kaleillustration.jpg" />
+      <meta property="og:image" content="./kaleillustration.jpg" />
    <div className={ss.container}>
 
       <div className={ss.container_menu}>
