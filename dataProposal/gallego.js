@@ -1,6 +1,8 @@
 const gallego = {
    number: "121",
-   
+   nosotros:`Somos KaleIndex, agencia creatica digital. contruimo aplicaciones web mobiel fiorst`,
+
+
    ustedes:`se busca construir su identidad digital a través de una web instituicional, 
    teniendo como referencia CeroliniFerrari / Estudio Ofarrel`,
 
@@ -8,7 +10,7 @@ const gallego = {
 
       resumen: `Pagina web a medida. contemplando las mejores practicas de diseño e usabilidad.`,
 
-      alcance:[
+      detalle:[
          `Seccion principal`,
          `Secceion quienes somos`,
          `Seccion Nuestros servicios`,
@@ -24,20 +26,29 @@ const gallego = {
    },
 
    etapas: {
-      Investigacion: `(1 semana)
+      investigacion: `(1 semana)
       Etapa en la que buscamos referencias. Tatno de estudios colegas como de paginas de afuera.
       Se define a grandes rasgos cual es la identidad que se le va a dar`,
 
-      Prototipado: ` (1 semana)
+      prototipado: ` (1 semana)
       Se monta un prototipo con informacion de muestra de la pagina principal para poder ver el look and feel de la web. 
       Se discute cualquier ajuste que se pueda hacer `,
 
-      Beta: ` (1 semana)
+      beta: ` (1 semana)
       Se construye toda la web a un 80%. se definen ulitmos ajustes. Recibimos la informacio que quedara en la pagina`,
 
-      Lanzamiento: ` (1 semana)
+      lanzamiento: ` (1 semana)
       Se lanza la web en el dominio deseado. `
+   },
+   
+   presupuesto: {
+      investigacion: `5 hrs`,
 
+      diseño: `20 hrs`,
+
+      desarollo: `25 hrs`,
+
+      valor:`45000`,
    }
 
 }

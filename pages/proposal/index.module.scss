@@ -1,6 +1,16 @@
 
 .container{
-   padding:1rem;
+   padding:0rem;
+   padding-top:0;
+
+
+   .container_menu{
+   position: sticky;
+   top: 0px;
+   background-color: white;
+   padding:0.5rem 1rem;
+
+   }
 
    .navBar{
       display:flex;
@@ -9,17 +19,28 @@
       align-content:center;
       justify-content: space-between;
       font-size:1.5rem;
-
+      max-width:900px;
       padding:2rem;
+      margin:0 auto;
+ 
 
       .title{
          background-image: url(../../public/kalelight.png);
          background-size: contain;
          background-repeat: no-repeat;
-           }
+         background-position-x: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         justify-items: center;
+      }
       p{
          margin:0;
+         font-size:1rem;
          padding:0;
+
       }
    }
    .arrow_forward{
@@ -32,13 +53,27 @@
 
 .navMenu{
    display: flex;
+   border-top:0.5px solid grey;
+   padding-top:0.5rem;
    justify-content: space-between;
    margin-bottom:1rem;
+   max-width:900px;
+   margin:0 auto;
+   :hover{
+      cursor: pointer;
+   }
 
    span{
       display:block;
+    
 
    }
 }
+
+   .container_detail{
+      padding:0 1rem;
+      max-width:900px;
+      margin:0 auto;
+   }
 
 }
