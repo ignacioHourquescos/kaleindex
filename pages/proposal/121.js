@@ -38,7 +38,13 @@ const Proposal = () =>{
    }
 
 
-   return(
+   return(<>
+      <title>KALE</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="agencia creativa digital" />
+      <meta property="og:title" content="kaleindex" />
+      <meta property="og:description" content="agencia creativa digital" />
+      <meta property="og:image" content="/kaleillustration.jpg" />
    <div className={ss.container}>
 
       <div className={ss.container_menu}>
@@ -116,7 +122,8 @@ const Proposal = () =>{
 
 
 
-   </div>)
+   </div>
+   </>)
 }
 
 export default Proposal;
