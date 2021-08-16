@@ -44,7 +44,9 @@ const Header = () => {
 }
             </div>
             <div className={ss.left}>
-               <p className={ss.herodesc}>Combinamos <span className={ss.green}>innovación</span>, <span className={ss.green}>lógica</span> y <span className={ss.green}>diseño</span> para crear productos digitales de alto valor agregado. Siempre abierto a nuevos desafios!</p>
+               <p className={ss.herodesc}>Combinamos <span className={ss.green}>innovación</span>, <span className={ss.green}>lógica</span>
+                y <span className={ss.green}>diseño</span>
+                para crear productos digitales de alto valor agregado. Siempre abiertos a nuevos desafíos!</p>
             </div>
          </div>
       </>
