@@ -7,7 +7,7 @@
 
 
 hacer seccion de presupuesto (nacho)
-agregar el texto abajo del header mobile (alejo)
+🟢agregar el texto abajo del header mobile (alejo)
 agregar flechita (alejo)
 agregar footer (alejo)
 agregar form (alejo)
