@@ -2,24 +2,35 @@
 .container{
    padding:1rem;
 
-   .section{
+   .navBar{
       display:flex;
-      flex-direction:column;
+      flex-direction:row;
       align-items: center;
       align-content:center;
+      justify-content: space-between;
+      font-size:1.5rem;
+
+      padding:2rem;
+
+      .title{
+         background-image: url(../../public/kalelight.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+           }
+      p{
+         margin:0;
+         padding:0;
+      }
    }
    .arrow_forward{
-      position:fixed;
-      right:2rem;
-      top:2rem;
+      
+
    }
    .arrow_backwards{
-      position:fixed;
-      left:2rem;
-      top:2rem;
+    
    }
-   
-.navBar{
+
+.navMenu{
    display: flex;
    justify-content: space-between;
    margin-bottom:1rem;
