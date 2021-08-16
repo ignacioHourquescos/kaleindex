@@ -1,0 +1,33 @@
+
+.container{
+   padding:1rem;
+
+   .section{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      align-content:center;
+   }
+   .arrow_forward{
+      position:fixed;
+      right:2rem;
+      top:2rem;
+   }
+   .arrow_backwards{
+      position:fixed;
+      left:2rem;
+      top:2rem;
+   }
+   
+.navBar{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom:1rem;
+
+   span{
+      display:block;
+
+   }
+}
+
+}

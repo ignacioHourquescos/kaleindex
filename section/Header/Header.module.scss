@@ -43,10 +43,13 @@
      
 
   }
+  @media (min-width: 700px) {
+   font-size: 3rem;
+ }
 
-  @media (min-width: 1000px) {
-    font-size: 4rem;
-  }
+
+
+
 }
 
 .green {

@@ -3,6 +3,19 @@
 🟢agergar iconos 
 🟢Redireccionar al dominio
 🟢Scroll snap
+🟢definir descipriones 
+
+
+hacer seccion de presupuesto (nacho)
+agregar el texto abajo del header mobile (alejo)
+agregar flechita (alejo)
+agregar footer (alejo)
+agregar form (alejo)
+
+agregar pagina de greenhab
+
+
+
 
 1/////
 Nosotros
@@ -10,7 +23,7 @@ Somos kaleIndex.buscamos combinar diseño, logica e innovacion para crear
 productos digitales de alto valor agregado. Abiertos siempre a nuevos desafios
 
 Ustedes
-Hang Kuchen, Sporleder & Rodriguez Morales buscan construir su identidad 
+<Hang Kuchen, Sporleder & Rodriguez Morales> buscan construir su identidad 
 digital a través de una web instituicional, a la altura de firma capa
 
 2////
@@ -46,10 +59,7 @@ Se lanza la web en el dominio deseado.
 *En cada instnacia se pacta una reuninnon virtual para definir ajustes
 
 
-hacer seccion de presupuesto
-definir descipriones 
-ver tema titulos
-agregar el texto abajo del header 
+
 
 
 

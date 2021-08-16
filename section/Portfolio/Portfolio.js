@@ -147,14 +147,23 @@ export default Card;
 
 
 const portfolioArray = [
+     {
+    type: "Institucional",
+    name: "CGHTE",
+    color: "#55CBCD",
+    image: "/camaracel.png",
+    brief: "Primera etapa de proyecto que agrupa agentes gastronomicos con el fin de mejorar la competitividad del sector",
+    icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
+    link: "https://camaraquilmes.netlify.app",
+  },
   {
     type: "webApp",
     name: "Renova",
     color: "#B7CFB7",
     image: "/renovacel.png",
-    brief: "A partir de un sistema de gestión en SQL, se hizo una conexión via Node.js, nera dinámica",
+    brief: "A partir de un sistema de gestión en SQL, se genero una web app para mostrar precios y stock de manera dinámica",
     icons: { html: 1, css: 1, react: 0, node: 1, bootstrap: 1, mysql: 1, firebase: 0, sass: 0, js: 1 },
-    link: "https://listasrenova.netlify.app/views/html/indexofertas.html"
+    link: "https://listasrenova.netlify.app/views/html/ofertas.html"
   },
 
   {
@@ -162,33 +171,34 @@ const portfolioArray = [
     name: "Corominola",
     color: "#c7dbda",
     image: "/corominolacel.png",
-    brief: "pagina web muy linda e intersante",
+    brief: "Web profesional para estudio de abogados penales especializados en casos de al complejidad",
     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 1, next: 1 },
+    link: "https://corominola-lyart.vercel.app/",
   },
   {
     type: "Institucional",
     name: "CGHTE",
     color: "#55CBCD",
     image: "/camaracel.png",
-    brief: "pagina web muy linda e intersante",
+    brief: "Primera etapa de proyecto que agrupa agentes gastronomicos con el fin de mejorar la competitividad del sector",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
     link: "https://camaraquilmes.netlify.app",
   },
-  {
-    type: "webApp",
-    name: "Polo Sales",
-    color: "#CCE2CB",
-    image: "/polosalescel.png",
-    brief: "pagina web muy linda e intersante",
-    icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
-    link: "https://polosales.netlify.app"
-  },
+//   {
+//     type: "webApp",
+//     name: "Polo Sales",
+//     color: "#CCE2CB",
+//     image: "/polosalescel.png",
+//     brief: "pagina web muy linda e intersante",
+//     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
+//     link: "https://polosales.netlify.app"
+//   },
   {
     type: "E-Commerce",
     name: "La Galera",
     color: "#9AB7D3",
     image: "/lagaleracel.png",
-    brief: "pagina web muy linda e intersante",
+    brief: "Dely store online con diseño de interfaz dinamico para poder visualizar promociones de manera efectiva",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 1, js: 0, google: 1, firebase: 1 },
     link: "https://lagalera.netlify.app"
   },
@@ -197,7 +207,7 @@ const portfolioArray = [
     name: "El Fuerte",
     color: "#FFDAC1",
     image: "/elfuertecel.png",
-    brief: "pagina web muy linda e intersante",
+    brief: "Web app para distribuidora mayorista. Se hizo foco en el diseño de un sistema de lista de precios agiles",
     icons: { html: 1, css: 1, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 0, google: 1, next: 0, firebase: 0 },
     link: "https://www.mayoristaelfuerte.com",
 
