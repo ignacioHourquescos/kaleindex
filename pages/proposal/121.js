@@ -108,9 +108,9 @@ const Proposal = () => {
                               <h3>Alcance</h3>
                               {pp.alcance.resumen}
                               <h3>Detalle</h3>
-                              {pp.alcance.detalle.map(item => <li key={detalle}>{item}</li>)}
+                              {pp.alcance.detalle.map(item => <li key={item}>{item}</li>)}
                               <h3>Tecnico</h3>
-                              {pp.alcance.tecnico.map(item => <li key={tecnico}>{item}</li>)}
+                              {pp.alcance.tecnico.map(item => <li key={item}>{item}</li>)}
                            </div>
                            : page1[2] ?
                               <div>
@@ -131,7 +131,7 @@ const Proposal = () => {
                                     <h3 style={{ borderTop: "1px solid grey", marginTop: "2rem" }}> Presupuesto Total</h3>
                                     ${pp.presupuesto.valor}
                                     <h3>NO incluye</h3>
-                                    {pp.presupuesto.noIncluye.map(item => <li key={NOincluye}>{item}</li>)}
+                                    {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                  </div>
 
                                  : ""
