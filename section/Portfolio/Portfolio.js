@@ -26,7 +26,7 @@ const Card = () => {
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
 
-  function FadeInWhenVisible({ children }) {
+  function FadeInWhenVisible({ children, card}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -38,6 +38,7 @@ const Card = () => {
 
     return (
       <motion.div
+        
         ref={ref}
         animate={controls}
         initial="hidden"
@@ -46,7 +47,7 @@ const Card = () => {
           visible: { opacity: 1, scale: 1 },
           hidden: { opacity: 0, scale: 0 }
         }}
-        key={Math.random()}>
+        key={card}>
         {children}
       </motion.div>
     );
