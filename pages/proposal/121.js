@@ -108,9 +108,9 @@ const Proposal = () => {
                               <h3>Alcance</h3>
                               {pp.alcance.resumen}
                               <h3>Detalle</h3>
-                              {pp.alcance.detalle.map(item => <li key={alcance.detalle}>{item}</li>)}
+                              {pp.alcance.detalle.map(item => <li key={detalle}>{item}</li>)}
                               <h3>Tecnico</h3>
-                              {pp.alcance.tecnico.map(item => <li key={alcance.tecnico}>{item}</li>)}
+                              {pp.alcance.tecnico.map(item => <li key={tecnico}>{item}</li>)}
                            </div>
                            : page1[2] ?
                               <div>
