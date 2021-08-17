@@ -134,9 +134,6 @@ const Proposal = () => {
                                     {pp.presupuesto.noIncluye.map(item => <li>{item}</li>)}
                                  </div>
 
-
-
-
                                  : ""
                   }
 
