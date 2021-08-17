@@ -1,5 +1,4 @@
 import ss from './Header.module.scss'
-import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import { useState } from 'react'
 

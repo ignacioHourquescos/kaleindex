@@ -17,6 +17,7 @@ import { FaGoogle } from 'react-icons/fa';
 import { SiNextDotJs } from 'react-icons/si'
 import { SiFirebase } from 'react-icons/si'
 import { FaArrowCircleRight } from 'react-icons/fa';
+import { DesktopView, MobileView } from 'react-device-detect';
 
 
 const Card = () => {
@@ -26,7 +27,7 @@ const Card = () => {
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
 
-  function FadeInWhenVisible({ children }) {
+  function FadeInWhenVisible({ children, card}) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -38,6 +39,7 @@ const Card = () => {
 
     return (
       <motion.div
+        
         ref={ref}
         animate={controls}
         initial="hidden"
@@ -46,7 +48,7 @@ const Card = () => {
           visible: { opacity: 1, scale: 1 },
           hidden: { opacity: 0, scale: 0 }
         }}
-      >
+        key={card}>
         {children}
       </motion.div>
     );
@@ -147,7 +149,7 @@ export default Card;
 
 
 const portfolioArray = [
-     {
+  {
     type: "Institucional",
     name: "CGHTE",
     color: "#55CBCD",
@@ -171,28 +173,29 @@ const portfolioArray = [
     name: "Corominola",
     color: "#c7dbda",
     image: "/corominolacel.png",
-    brief: "Web profesional para estudio de abogados penales especializados en casos de al complejidad",
+    brief: "Web profesional para estudio de abogados penales especializados en casos de alta complejidad",
     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 1, next: 1 },
     link: "https://corominola-lyart.vercel.app/",
   },
   {
-    type: "Institucional",
-    name: "CGHTE",
-    color: "#55CBCD",
-    image: "/camaracel.png",
-    brief: "Primera etapa de proyecto que agrupa agentes gastronomicos con el fin de mejorar la competitividad del sector",
+    type: "webApp",
+    name: "GreenHab",
+    color: "#BEE5B0",
+    image: "/greenhabcel.png",
+    brief: "Se desarollo un MVP, para planificar las cosechas de los usuarios asosciados a la marca",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
-    link: "https://camaraquilmes.netlify.app",
+     link: "https://greenhab2.netlify.app"
+   
   },
-//   {
-//     type: "webApp",
-//     name: "Polo Sales",
-//     color: "#CCE2CB",
-//     image: "/polosalescel.png",
-//     brief: "pagina web muy linda e intersante",
-//     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
-//     link: "https://polosales.netlify.app"
-//   },
+  //   {
+  //     type: "webApp",
+  //     name: "Polo Sales",
+  //     color: "#CCE2CB",
+  //     image: "/polosalescel.png",
+  //     brief: "pagina web muy linda e intersante",
+  //     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
+  //     link: "https://polosales.netlify.app"
+  //   },
   {
     type: "E-Commerce",
     name: "La Galera",

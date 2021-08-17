@@ -1,0 +1,38 @@
+.footer_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  @media (min-width: 1000px) {
+    justify-content: flex-end;
+    width: 80%;
+  }
+}
+
+.herotitle {
+  font-size: 2rem;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+
+.green {
+  color: #3ccd9d;
+  font-weight: bold;
+}
+
+.footer_text {
+  color: #3f3f3f;
+  padding: 1em;
+  width: 70%;
+  padding-left: 2em;
+  @media (min-width: 1000px) {
+    
+    width:30%
+  }
+}
+.mail {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}

@@ -4,6 +4,7 @@ import Card from '../section/Portfolio/Portfolio'
 import HeroDescMob from '../section/HeroDescMob/HeroDescMob'
 import Head from 'next/head'
 import { MobileView } from 'react-device-detect';
+import Footer from '../components/Footer/Footer';
 
 
 
@@ -19,14 +20,17 @@ const Home = () => {
         <meta property="og:description" content="agencia creativa digital" />
         <meta property="og:image" content="/kaleillustration.jpg" />
       </Head>
-      <section style={{ scrollSnapAlign: "start" }}>
+      <section style={{ scrollSnapAlign: "center" }}>
         <Header />
       </section>
       <MobileView>
-        <HeroDescMob/>
+        <HeroDescMob />
       </MobileView>
 
       <Card />
+      <section style={{ scrollSnapAlign: "center" }}>
+        <Footer /
+        ></section>
 
 
       {/* <Portfolio/>    */}

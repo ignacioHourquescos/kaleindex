@@ -5,7 +5,9 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-  
+  @media (min-width: 1000px) {
+    display: none;
+    }  
 }
 .herodesc {
   font-size: 1.3rem;
