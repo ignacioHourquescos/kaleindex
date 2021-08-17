@@ -3,15 +3,21 @@ import {useState} from 'react'
 import pp from '../../dataProposal/gallego'
 import ss from './index.module.scss'
 import Head from 'next/head'
+import Link from 'next/Link'
 
 
 const Proposal = () =>{
    const [page1, setPage1] =useState([true, false, false, false]);
+   const [showIntro, setShowIntro] = useState(true);
    const [counter, setCounter] = useState(0);
    const router = useRouter();
    var categoryParams = router.query.slug;
 
    const triggerCounter = (indication) =>{
+      if(indication=="down" && counter==0){
+         setShowIntro(true)
+         return;
+      }
       if(counter<0) {
          setCounter(0);
          setActivePage(counter)
@@ -48,17 +54,22 @@ const Proposal = () =>{
       <meta property="og:description" content="agencia creativa digital" />
       <meta property="og:image" content="./kaleillustration.jpg" />
    </Head>
-   <div className={ss.intro}>
-      
-
-   </div>
-   
-   <div className={ss.container}>
+   {
+      showIntro
+      ?
+      <div className={ss.intro}>
+         <h2><h2 style={{color:"#3CCD9D", display:"inline"}}>KALE</h2>INDEX</h2>
+         <p>Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. Siempre abiertos a nuevos desafíos!</p>
+         <button onClick={()=>setShowIntro(false)}>VER PRESUPUESTO</button>
+         <button style={{border:"none", color:"#3CCD9D"}}><Link href={"../../index.js"}>OTROS TRABAJOS</Link></button>
+      </div>
+      :
+      <div className={ss.container}>
 
       <div className={ss.container_menu}>
          <div className={ss.navBar}>
             {
-               counter==3 || page1[1]==true ||page1[2]==true
+               1==1
                ?<div className={ss.arrow_backwards} onClick={()=>triggerCounter("down")}>{arrowLeft}</div>
                :<>{arrowTransparent}</>
             }
@@ -76,7 +87,7 @@ const Proposal = () =>{
          </div>
 
          <div className={ss.navMenu} >
-            <div style={page1[0] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(0)}>Intro</div>
+            <div style={page1[0] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(0)}>intro</div>
             <div style={page1[1] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(1)}>El proyecto</div>
             <div style={page1[2] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(2)}>Etapas</div>
             <div style={page1[3] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(3)}>Presupuesto</div>
@@ -126,6 +137,10 @@ const Proposal = () =>{
       
       </div>
    </div>
+   }
+
+   
+   
    </>)
 }
 

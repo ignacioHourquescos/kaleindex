@@ -1,7 +1,6 @@
 const gallego = {
    number: "121",
-   nosotros:`Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. 
-   Utilizamos las tecnolgías mas actuales con un enfoque mobile first.`,
+   nosotros:`Hola!.`,
 
 
    ustedes:``,
