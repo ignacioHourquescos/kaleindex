@@ -1,7 +1,6 @@
 const gallego = {
    number: "121",
-   nosotros:`Somos KaleIndex, agencia creativa digital. 
-   Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. 
+   nosotros:`Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. 
    Utilizamos las tecnolgías mas actuales con un enfoque mobile first.`,
 
 
@@ -21,9 +20,9 @@ const gallego = {
          `Formulario de contacto`,
       ],
       tecnico:[
-         `Diseño hecho a medida`,
-         `Diseño 100% responsvo (adaptable a todas las pantallas)`,
-         `Sección de pulbicaciones autoadminstirable`,
+         `Diseño hecho a medida, utilizando HTML5, CSS, y Java Script`,
+         `Diseño 100% responsivo (adaptable a todas las pantallas)`,
+         `Sección de publicaciones autoadministrable`,
          `Optimizado para motores de busqueda`,
       ],
    },
@@ -50,9 +49,9 @@ const gallego = {
    presupuesto: {
       investigacion: `5 hrs`,
 
-      diseño: `20 hrs`,
+      diseño: `25 hrs`,
 
-      desarollo: `25 hrs`,
+      desarollo: `20 hrs`,
 
       valor:`45000`,
    }

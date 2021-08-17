@@ -9,7 +9,9 @@
 
 hacer seccion de presupuesto (nacho)
 agregar footer "listo para pasar de la idea a la accion?"(alejo)
-agregar form (alejo)
+🟢agregar el texto abajo del header mobile (alejo)
+agregar footer 
+agregar form 
 agregar pagina de greenhab
 
 

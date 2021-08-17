@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import {useState} from 'react'
 import pp from '../../dataProposal/gallego'
 import ss from './index.module.scss'
+import Head from 'next/head'
 
 
 const Proposal = () =>{
@@ -39,38 +40,47 @@ const Proposal = () =>{
 
 
    return(<>
+   <Head>
       <title>KALE</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="agencia creativa digital" />
       <meta property="og:title" content="kaleindex" />
       <meta property="og:description" content="agencia creativa digital" />
       <meta property="og:image" content="./kaleillustration.jpg" />
+   </Head>
+   <div className={ss.intro}>
+      
+
+   </div>
+   
    <div className={ss.container}>
 
       <div className={ss.container_menu}>
-      <div className={ss.navBar}>
-      {
-         counter==3 || page1[1]==true ||page1[2]==true
-         ?<div className={ss.arrow_backwards} onClick={()=>triggerCounter("down")}>{arrowLeft}</div>
-         :<>{arrowTransparent}</>
-      }
-      <div className={ss.title}>
-         <p>PRESUPUESTO</p>
-         <p><p style={{color:"#3CCD9D", display:"inline"}}>KALE</p>INDEX</p>
-      </div>
-      {
-          counter==0 || page1[1]==true ||page1[2]==true
-         ?<div className={ss.arrow_forward} onClick={()=>triggerCounter("up")}>{arrowRight}</div>
-         :<>{arrowTransparent}</>
-      }
-      </div>
-      
-      <div className={ss.navMenu} >
-         <div style={page1[0] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(0)}>Intro</div>
-         <div style={page1[1] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(1)}>El proyecto</div>
-         <div style={page1[2] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(2)}>Etapas</div>
-         <div style={page1[3] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(3)}>Presupuesto</div>
-      </div>
+         <div className={ss.navBar}>
+            {
+               counter==3 || page1[1]==true ||page1[2]==true
+               ?<div className={ss.arrow_backwards} onClick={()=>triggerCounter("down")}>{arrowLeft}</div>
+               :<>{arrowTransparent}</>
+            }
+
+            <div className={ss.title}>
+               <p>PRESUPUESTO</p>
+               <p><p style={{color:"#3CCD9D", display:"inline"}}>KALE</p>INDEX</p>
+            </div>
+
+            {
+                counter==0 || page1[1]==true ||page1[2]==true
+               ?<div className={ss.arrow_forward} onClick={()=>triggerCounter("up")}>{arrowRight}</div>
+               :<>{arrowTransparent}</>
+            }
+         </div>
+
+         <div className={ss.navMenu} >
+            <div style={page1[0] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(0)}>Intro</div>
+            <div style={page1[1] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(1)}>El proyecto</div>
+            <div style={page1[2] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(2)}>Etapas</div>
+            <div style={page1[3] ? {borderBottom :"5px solid #3CCD9D"} : {borderLine:"none" }} onClick={()=>setActivePage(3)}>Presupuesto</div>
+         </div>
       </div>
       
       <div className={ss.container_detail}>
@@ -107,7 +117,7 @@ const Proposal = () =>{
                <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}><h3 style={{display:"inline"}}> Investigacion</h3>{pp.presupuesto.investigacion}</div>
                <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}><h3 style={{display:"inline"}}> Diseño</h3>{pp.presupuesto.diseño}</div>
                <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}><h3 style={{display:"inline"}}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
-               <h3 style={{borderTop:"1px solid grey", marginTop:"2rem"}}> Presupeusto Total</h3>
+               <h3 style={{borderTop:"1px solid grey", marginTop:"2rem"}}> Presupuesto Total</h3>
                ${pp.presupuesto.valor}
 
             </div>
@@ -115,13 +125,6 @@ const Proposal = () =>{
       }
       
       </div>
-
-
-      {categoryParams}
-
-
-
-
    </div>
    </>)
 }
@@ -132,7 +135,6 @@ export default Proposal;
 const arrowRight = <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.9831 2.41635L13.3371 10.2139L1.79153 17.7249L1.9831 2.41635Z" fill="white" stroke="#3CCD9D" stroke-width="2"/>
 </svg>
-
 
 
 const arrowLeft = <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
