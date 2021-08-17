@@ -4,11 +4,10 @@
 🟢Redireccionar al dominio
 🟢Scroll snap
 🟢definir descipriones 
-
+🟢agregar el texto abajo del header mobile (alejo)
+🟢agregar flechita (alejo)
 
 hacer seccion de presupuesto (nacho)
-agregar el texto abajo del header mobile (alejo)
-agregar flechita (alejo)
 agregar footer "listo para pasar de la idea a la accion?"(alejo)
 agregar form (alejo)
 agregar pagina de greenhab

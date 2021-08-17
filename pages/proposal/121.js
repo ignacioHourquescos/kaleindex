@@ -52,7 +52,7 @@ const Proposal = () =>{
       {
          counter==3 || page1[1]==true ||page1[2]==true
          ?<div className={ss.arrow_backwards} onClick={()=>triggerCounter("down")}>{arrowLeft}</div>
-         :<div />
+         :<>{arrowTransparent}</>
       }
       <div className={ss.title}>
          <p>PRESUPUESTO</p>
@@ -61,7 +61,7 @@ const Proposal = () =>{
       {
           counter==0 || page1[1]==true ||page1[2]==true
          ?<div className={ss.arrow_forward} onClick={()=>triggerCounter("up")}>{arrowRight}</div>
-         :<div />
+         :<>{arrowTransparent}</>
       }
       </div>
       
@@ -79,27 +79,27 @@ const Proposal = () =>{
             <div>
                <h3> Nosotors</h3>
                {pp.nosotros}
-               <h3> Ustedes</h3>
-               {pp.ustedes} 
+               {/* <h3> Ustedes</h3>
+               {pp.ustedes}  */}
             </div>
          :page1[1]?
             <div>  
                <h3>Alcance</h3>
                {pp.alcance.resumen}
                <h3>Detalle</h3>
-               {pp.alcance.detalle}
+               {pp.alcance.detalle.map(item => <li>{item}</li>)}
                <h3>Tecnico</h3>
-               {pp.alcance.tecnico} 
+               {pp.alcance.tecnico.map(item => <li>{item}</li>)}
             </div>
          :page1[2]?
             <div>
-               <h3> Investigacion</h3>
+               <h3> Investigacion ({pp.etapas.investigacionDuration})</h3>
                {pp.etapas.investigacion}
-               <h3> Prototipado</h3>
+               <h3> Prototipado ({pp.etapas.prototipadoDuration})</h3>
                {pp.etapas.prototipado}
-               <h3> Beta</h3>
+               <h3> Beta ({pp.etapas.betaDuration})</h3>
                {pp.etapas.beta}
-               <h3> Lanzamiento</h3>
+               <h3> Lanzamiento ({pp.etapas.lanzamientoDuration})</h3>
                {pp.etapas.lanzamiento}
             </div>
          :page1[3]?
@@ -130,12 +130,18 @@ export default Proposal;
 
 
 const arrowRight = <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.49485 1.47447L14.2367 10.2252L1.27986 18.6543L1.49485 1.47447Z" fill="white" stroke="#3CCD9D"/>
+<path d="M1.9831 2.41635L13.3371 10.2139L1.79153 17.7249L1.9831 2.41635Z" fill="white" stroke="#3CCD9D" stroke-width="2"/>
 </svg>
 
 
+
 const arrowLeft = <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.9942 1.81859L1.03734 10.2477L13.7792 18.9984L13.9942 1.81859Z" fill="white" stroke="#3CCD9D"/>
+<path d="M13.4825 2.74795L1.93694 10.259L13.2909 18.0565L13.4825 2.74795Z" fill="white" stroke="#3CCD9D" stroke-width="2"/>
+</svg>
+
+const arrowTransparent = <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.137742 9.99914L14.2674 19.703L14.5058 0.651922L0.137742 9.99914Z" fill="white" fill-opacity="0.01"/>
+<path d="M13.4825 2.51065L1.93694 10.0217L13.2909 17.8192L13.4825 2.51065Z" stroke="#3CCD9D" stroke-opacity="0.01" stroke-width="2"/>
 </svg>
 
 
