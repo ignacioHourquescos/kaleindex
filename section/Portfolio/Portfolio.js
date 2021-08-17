@@ -46,7 +46,7 @@ const Card = () => {
           visible: { opacity: 1, scale: 1 },
           hidden: { opacity: 0, scale: 0 }
         }}
-      >
+        key={Math.random()}>
         {children}
       </motion.div>
     );
@@ -147,7 +147,7 @@ export default Card;
 
 
 const portfolioArray = [
-     {
+  {
     type: "Institucional",
     name: "CGHTE",
     color: "#55CBCD",
@@ -184,15 +184,15 @@ const portfolioArray = [
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
     link: "https://camaraquilmes.netlify.app",
   },
-//   {
-//     type: "webApp",
-//     name: "Polo Sales",
-//     color: "#CCE2CB",
-//     image: "/polosalescel.png",
-//     brief: "pagina web muy linda e intersante",
-//     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
-//     link: "https://polosales.netlify.app"
-//   },
+  //   {
+  //     type: "webApp",
+  //     name: "Polo Sales",
+  //     color: "#CCE2CB",
+  //     image: "/polosalescel.png",
+  //     brief: "pagina web muy linda e intersante",
+  //     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 1, mysql: 0, firebase: 0, sass: 0, js: 1 },
+  //     link: "https://polosales.netlify.app"
+  //   },
   {
     type: "E-Commerce",
     name: "La Galera",

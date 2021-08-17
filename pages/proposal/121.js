@@ -131,7 +131,7 @@ const Proposal = () => {
                                     <h3 style={{ borderTop: "1px solid grey", marginTop: "2rem" }}> Presupuesto Total</h3>
                                     ${pp.presupuesto.valor}
                                     <h3>NO incluye</h3>
-                                    {pp.presupuesto.noIncluye.map(item => <li>{item}</li>)}
+                                    {pp.presupuesto.noIncluye.map(item => <li key={NOincluye}>{item}</li>)}
                                  </div>
 
 
