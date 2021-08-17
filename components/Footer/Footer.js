@@ -1,5 +1,4 @@
 import ss from './Footer.module.scss'
-import "animate.css/animate.min.css";
 
 const Footer = () => {
 
