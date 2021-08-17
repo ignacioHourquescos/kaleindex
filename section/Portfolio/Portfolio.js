@@ -171,7 +171,7 @@ const portfolioArray = [
     name: "Corominola",
     color: "#c7dbda",
     image: "/corominolacel.png",
-    brief: "Web profesional para estudio de abogados penales especializados en casos de al complejidad",
+    brief: "Web profesional para estudio de abogados penales especializados en casos de alta complejidad",
     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 1, next: 1 },
     link: "https://corominola-lyart.vercel.app/",
   },
