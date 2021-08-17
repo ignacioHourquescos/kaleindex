@@ -108,9 +108,9 @@ const Proposal = () => {
                               <h3>Alcance</h3>
                               {pp.alcance.resumen}
                               <h3>Detalle</h3>
-                              {pp.alcance.detalle.map(item => <li>{item}</li>)}
+                              {pp.alcance.detalle.map(item => <li key={alcance.detalle}>{item}</li>)}
                               <h3>Tecnico</h3>
-                              {pp.alcance.tecnico.map(item => <li>{item}</li>)}
+                              {pp.alcance.tecnico.map(item => <li key={alcance.tecnico}>{item}</li>)}
                            </div>
                            : page1[2] ?
                               <div>
@@ -153,17 +153,17 @@ export default Proposal;
 
 
 const arrowRight = <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-   <path d="M1.9831 2.41635L13.3371 10.2139L1.79153 17.7249L1.9831 2.41635Z" fill="white" stroke="#3CCD9D" stroke-width="2" />
+   <path d="M1.9831 2.41635L13.3371 10.2139L1.79153 17.7249L1.9831 2.41635Z" fill="white" stroke="#3CCD9D" strokeWidth="2" />
 </svg>
 
 
 const arrowLeft = <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-   <path d="M13.4825 2.74795L1.93694 10.259L13.2909 18.0565L13.4825 2.74795Z" fill="white" stroke="#3CCD9D" stroke-width="2" />
+   <path d="M13.4825 2.74795L1.93694 10.259L13.2909 18.0565L13.4825 2.74795Z" fill="white" stroke="#3CCD9D" strokeWidth="2" />
 </svg>
 
 const arrowTransparent = <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-   <path d="M0.137742 9.99914L14.2674 19.703L14.5058 0.651922L0.137742 9.99914Z" fill="white" fill-opacity="0.01" />
-   <path d="M13.4825 2.51065L1.93694 10.0217L13.2909 17.8192L13.4825 2.51065Z" stroke="#3CCD9D" stroke-opacity="0.01" stroke-width="2" />
+   <path d="M0.137742 9.99914L14.2674 19.703L14.5058 0.651922L0.137742 9.99914Z" fill="white" fillOpacity="0.01" />
+   <path d="M13.4825 2.51065L1.93694 10.0217L13.2909 17.8192L13.4825 2.51065Z" stroke="#3CCD9D" strokeOpacity="0.01" strokeWidth="2" />
 </svg>
 
 
