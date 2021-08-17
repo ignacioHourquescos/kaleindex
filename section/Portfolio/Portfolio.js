@@ -17,6 +17,7 @@ import { FaGoogle } from 'react-icons/fa';
 import { SiNextDotJs } from 'react-icons/si'
 import { SiFirebase } from 'react-icons/si'
 import { FaArrowCircleRight } from 'react-icons/fa';
+import { DesktopView, MobileView } from 'react-device-detect';
 
 
 const Card = () => {
@@ -177,13 +178,14 @@ const portfolioArray = [
     link: "https://corominola-lyart.vercel.app/",
   },
   {
-    type: "Institucional",
-    name: "CGHTE",
-    color: "#55CBCD",
-    image: "/camaracel.png",
-    brief: "Primera etapa de proyecto que agrupa agentes gastronomicos con el fin de mejorar la competitividad del sector",
+    type: "webApp",
+    name: "GreenHab",
+    color: "#BEE5B0",
+    image: "/greenhabcel.png",
+    brief: "Se desarollo un MVP, para planificar las cosechas de los usuarios asosciados a la marca",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
-    link: "https://camaraquilmes.netlify.app",
+     link: "https://greenhab2.netlify.app"
+   
   },
   //   {
   //     type: "webApp",
