@@ -8,7 +8,7 @@
 🟢agregar flechita (alejo)
 
 hacer seccion de presupuesto (nacho)
-agregar footer "listo para pasar de la idea a la accion?"(alejo)
+agregar footer "ya nos conocemos, pasemos de la idea a la accion"(alejo)
 🟢agregar el texto abajo del header mobile (alejo)
 agregar footer 
 agregar form 
