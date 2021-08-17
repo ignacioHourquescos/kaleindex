@@ -7,7 +7,7 @@ const gallego = {
 
    alcance:{
 
-      resumen: `Pagina web a medida institucional a medida, contemplando
+      resumen: `Pagina web a institucional a medida, contemplando
       las mejores practicas de diseño e usabilidad.
       teniendo como referencia CeroliniFerrari / Estudio Ofarrel. `,
 
@@ -19,7 +19,7 @@ const gallego = {
          `Formulario de contacto`,
       ],
       tecnico:[
-         `Diseño hecho a medida, utilizando HTML5, CSS, y Java Script`,
+         `Desarrollo hecho a medida, utilizando HTML5, CSS, y JavaScript`,
          `Diseño 100% responsivo (adaptable a todas las pantallas)`,
          `Sección de publicaciones autoadministrable`,
          `Optimizado para motores de busqueda`,
@@ -29,9 +29,8 @@ const gallego = {
    etapas: {
       investigacionDuration:`5 dias`,
       investigacion: `Etapa en la que buscamos referencias. Tanto de estudios colegas como de paginas
-       de afuera. Se define a grandes rasgos cual es la identidad que se le va a dar a la web. Coposicion gráfica
-       ,
-       informacion,`,
+       de afuera. Se define a grandes rasgos cual es la identidad que se le va a dar a la web. Coposicion gráfica,
+       Informacion, Estilo.`,
      
       prototipadoDuration:`15 dias `,
       prototipado: ` Se monta un prototipo con informacion de muestra de la pagina principal 
@@ -41,8 +40,8 @@ const gallego = {
       beta: `Se construye toda la web a un 80%. se definen ulitmos ajustes. Recibimos la informacio 
       que quedara en la pagina`,
       
-      lanzamientoDuration:`5 dias`,
-      lanzamiento: `Se lanza la web en el dominio deseado. `
+      lanzamientoDuration:`3 dias`,
+      lanzamiento: `Se lanza la web en el dominio deseado y se analizan ajustes finales.`
    },
    
    presupuesto: {
@@ -53,6 +52,13 @@ const gallego = {
       desarollo: `20 hrs`,
 
       valor:`45000`,
+
+     noIncluye:[
+         `Dominio`,
+         `Hosting`,
+         `E-mail corporativo`,
+   ],
+
    }
 
 }
