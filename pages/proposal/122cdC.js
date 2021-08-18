@@ -129,6 +129,8 @@ const Proposal = () => {
                               <div>
                                  <h3> Investigación ({pp.etapas.investigacionDuration})</h3>
                                  {pp.etapas.investigacion}
+                                 <h4 style={{marginLeft: "0.5em"}}>Recursos</h4>
+                                 {pp.etapas.recursos.map(item => <li key={item} style={{marginLeft: "0.5em"}}>{item}</li>)}
                                  <h3> Prototipo ({pp.etapas.prototipadoDuration})</h3>
                                  {pp.etapas.prototipado}
                                  <h3> Primer Versión ({pp.etapas.betaDuration})</h3>
@@ -139,15 +141,15 @@ const Proposal = () => {
                               </div>
                               : page1[3] ?
                                  <div>
-                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigacion</h3>{pp.presupuesto.investigacion}</div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigación</h3>{pp.presupuesto.investigacion}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Diseño</h3>{pp.presupuesto.diseño}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
                                     <div style={{backgroundColor:"#3CCD9D", color:"white", padding:"0.5rem"}}> Presupuesto Total: ${pp.presupuesto.valor} pesos</div>
                                     <h3>NO incluye</h3>
                                     {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                     <h3>Condiciones</h3>
-                                    <li>Pago 50% para comenzar, 50% al finalizar</li>
-                                    <li>Se emite factura C</li>
+                                    <li>Pago 50% para comenzar, 50% al finalizar.</li>
+                                    <li>Se emite factura C.</li>
                                     <div>. </div>
                                  </div>
 
