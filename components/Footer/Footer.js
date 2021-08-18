@@ -21,15 +21,15 @@ const Footer = () => {
                     </span>
                 </div>
                 <div className={ss.footer_text}>
-                    <h3>
+                    <h3 className={ss.action}>
                         Ahora que nos
                         conocemos,
                         pasemos de la
-                        idea a la accion
+                        idea a la acción
                     </h3>
-                    <p className={ss.mail}>hello@kaleindex.co</p>
-                    <p>Nacho: +54 9 11 6510-6333</p>
-                    <p>Alejo: +54 9 11 6249-9989</p>
+                    <p className={ss.mail} style={{ fontWeight: "bold" }} >hello@kaleindex.co</p>
+                    <p className={ss.contact}>Nacho: +54 9 11 6510-6333</p>
+                    <p className={ss.contact}>Alejo: +54 9 11 6249-9989</p>
                 </div>
             </div>
         </>
