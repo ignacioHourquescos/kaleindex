@@ -99,7 +99,7 @@ const Proposal = () => {
                      page1[0] ?
                         <div>
                            <h3> </h3>
-                           {pp.Bienvenidos}
+                           {pp.bienvenidos}
                            {/* <h3> Ustedes</h3>
                {pp.ustedes}  */}
                         </div>

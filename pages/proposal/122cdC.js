@@ -3,7 +3,7 @@ import { useState } from 'react'
 import pp from '../../dataProposal/casaCelu'
 import ss from './index.module.scss'
 import Head from 'next/head'
-// import Link from 'next/Link'
+import Link from 'next/link'
 
 
 const Proposal = () => {
@@ -61,7 +61,7 @@ const Proposal = () => {
                <h2><h2 style={{ color: "#3CCD9D", display: "inline" }}>KALE</h2>INDEX</h2>
                <p>Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. Siempre abiertos a nuevos desafíos!</p>
                <button onClick={() => setShowIntro(false)}>VER PRESUPUESTO</button>
-               {/* <button style={{border:"none", color:"#3CCD9D"}}><Link href={"../../index.js"}>OTROS TRABAJOS</Link></button> */}
+               <button style={{border:"none", color:"#3CCD9D"}}><Link href="/">OTROS TRABAJOS</Link></button>
             </div>
             :
             <div className={ss.container}>
@@ -98,8 +98,8 @@ const Proposal = () => {
                   {
                      page1[0] ?
                         <div>
-                           <h3> Nosotors</h3>
-                           {pp.nosotros}
+                           <h3> </h3>
+                           {pp.bienvenidos}
                            {/* <h3> Ustedes</h3>
                {pp.ustedes}  */}
                         </div>
@@ -108,16 +108,16 @@ const Proposal = () => {
                               <h3>Alcance</h3>
                               {pp.alcance.resumen}
                               <h3>Detalle</h3>
-                              {pp.alcance.detalle.map(item => <li key={pp.alcance.detalle}>{item}</li>)}
+                              {pp.alcance.detalle.map(item => <li key={item}>{item}</li>)}
                               <h3>Tecnico</h3>
-                              {pp.alcance.tecnico.map(item => <li key={pp.alcance.tecnico}>{item}</li>)}
+                              {pp.alcance.tecnico.map(item => <li key={item}>{item}</li>)}
                            </div>
                            : page1[2] ?
                               <div>
                                  <h3> Investigacion ({pp.etapas.investigacionDuration})</h3>
                                  {pp.etapas.investigacion}
                                  <h4>Recursos</h4>
-                                 {pp.etapas.recursos}
+                                 {pp.etapas.recursos.map(item => <li key={item}>{item}</li>)}
                                  <h3> Prototipado ({pp.etapas.prototipadoDuration})</h3>
                                  {pp.etapas.prototipado}
                                  <h3> Beta ({pp.etapas.betaDuration})</h3>
@@ -130,14 +130,13 @@ const Proposal = () => {
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigacion</h3>{pp.presupuesto.investigacion}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Diseño</h3>{pp.presupuesto.diseño}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
-                                    <h3 style={{ borderTop: "1px solid grey", marginTop: "2rem" }}> Presupuesto Total</h3>
-                                    ${pp.presupuesto.valor}
+                                    <div style={{backgroundColor:"#3CCD9D", color:"white", padding:"0.5rem"}}> Presupuesto Total: ${pp.presupuesto.valor} pesos</div>
                                     <h3>NO incluye</h3>
-                                    {pp.presupuesto.noIncluye.map(item => <li key={pp.alcance.NOincluye}>{item}</li>)}
+                                    {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
+                                    <h3>Condiciones</h3>
+                                    <li>pago 50% para comenzar, 50% al finalizar</li>
+                                    <li>se emite factura C</li>
                                  </div>
-
-
-
 
                                  : ""
                   }

@@ -1,6 +1,11 @@
 const casaCelu = {
     number: "122cdC",
-    nosotros: `Hola!.`,
+    bienvenidos: `Hola, gracias por considerarnos.
+    sabemos que  necesitas tu pagina funcionando cuanto antes.
+     Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
+    y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
+    Esperamos poder realizar este proyecto con ustedes!
+     `,
 
 
     ustedes: ``,
