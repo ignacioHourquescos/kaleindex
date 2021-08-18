@@ -65,7 +65,7 @@ const Proposal = () => {
                <h2><h2 style={{ color: "#3CCD9D", display: "inline" }}>KALE</h2>INDEX</h2>
                <p>Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. Siempre abiertos a nuevos desafíos!</p>
                <button onClick={() => setShowIntro(false)}>VER PRESUPUESTO</button>
-               <button style={{border:"none", color:"#3CCD9D"}}><Link href="/">OTROS TRABAJOS</Link></button>
+               <button style={{border:"1px solid #3CCD9D", color:"#3CCD9D"}}><Link href="/">OTROS TRABAJOS</Link></button>
             </div>
             :
             <div className={ss.container}>
@@ -106,7 +106,7 @@ const Proposal = () => {
                            <br/>
                            <div>Nos alegra que nos hayan tenido en cuenta!</div>
                            <br/>
-                           <div>Aca podran conocer la propuesta del proyecto con los tiempos, etapas y valores</div>
+                           <div>Aca podrán conocer la propuesta del proyecto con los tiempos, etapas y valores.</div>
                            <br/>
                            {pp.Bienvenidos}
                            <br/>
@@ -120,20 +120,22 @@ const Proposal = () => {
                               <h3>Alcance</h3>
                               {pp.alcance.resumen}
                               <h3>Detalle</h3>
-                              {pp.alcance.detalle.map(item => <li key={item}>{item}</li>)}
-                              <h3>Tecnico</h3>
+                              {pp.alcance.detalle.map(item => <li  key={item}>{item}</li>)}
+                              <h3>Técnico</h3>
                               {pp.alcance.tecnico.map(item => <li key={item}>{item}</li>)}
+                              <div>. </div>
                            </div>
                            : page1[2] ?
                               <div>
-                                 <h3> Investigacion ({pp.etapas.investigacionDuration})</h3>
+                                 <h3> Investigación ({pp.etapas.investigacionDuration})</h3>
                                  {pp.etapas.investigacion}
                                  <h3> Prototipo ({pp.etapas.prototipadoDuration})</h3>
                                  {pp.etapas.prototipado}
-                                 <h3> Primer Version ({pp.etapas.betaDuration})</h3>
+                                 <h3> Primer Versión ({pp.etapas.betaDuration})</h3>
                                  {pp.etapas.beta}
                                  <h3> Lanzamiento ({pp.etapas.lanzamientoDuration})</h3>
                                  {pp.etapas.lanzamiento}
+                                 <div>. </div>
                               </div>
                               : page1[3] ?
                                  <div>
@@ -144,8 +146,9 @@ const Proposal = () => {
                                     <h3>NO incluye</h3>
                                     {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                     <h3>Condiciones</h3>
-                                    <li>pago 50% para comenzar, 50% al finalizar</li>
-                                    <li>se emite factura C</li>
+                                    <li>Pago 50% para comenzar, 50% al finalizar</li>
+                                    <li>Se emite factura C</li>
+                                    <div>. </div>
                                  </div>
 
                                  : ""

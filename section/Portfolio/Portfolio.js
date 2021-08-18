@@ -154,7 +154,7 @@ const portfolioArray = [
     name: "CGHTE",
     color: "#55CBCD",
     image: "/camaracel.png",
-    brief: "Primera etapa de proyecto que agrupa agentes gastronomicos con el fin de mejorar la competitividad del sector",
+    brief: "Primera etapa de proyecto que agrupa agentes gastronómicos con el fin de mejorar la competitividad del sector",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
     link: "https://camaraquilmes.netlify.app",
   },
@@ -163,7 +163,7 @@ const portfolioArray = [
     name: "Renova",
     color: "#B7CFB7",
     image: "/renovacel.png",
-    brief: "A partir de un sistema de gestión en SQL, se genero una web app para mostrar precios y stock de manera dinámica",
+    brief: "A partir de un sistema de gestión en SQL, se generó una web app para mostrar precios y stock de manera dinámica",
     icons: { html: 1, css: 1, react: 0, node: 1, bootstrap: 1, mysql: 1, firebase: 0, sass: 0, js: 1 },
     link: "https://listasrenova.netlify.app/views/html/ofertas.html"
   },
@@ -173,7 +173,7 @@ const portfolioArray = [
     name: "Corominola",
     color: "#c7dbda",
     image: "/corominolacel.png",
-    brief: "Web profesional para estudio de abogados penales especializados en casos de alta complejidad",
+    brief: "Web institucional para estudio de abogados penalistas especializados en casos de alta complejidad",
     icons: { html: 1, css: 1, react: 0, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 1, next: 1 },
     link: "https://corominola-lyart.vercel.app/",
   },
@@ -182,7 +182,7 @@ const portfolioArray = [
     name: "GreenHab",
     color: "#BEE5B0",
     image: "/greenhabcel.png",
-    brief: "Se desarollo un MVP, para planificar las cosechas de los usuarios asosciados a la marca",
+    brief: "Se desarollo un MVP, para planificar las cosechas de los usuarios asociados al proyecto",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 1, sass: 1, js: 0, google: 1 },
      link: "https://greenhab2.netlify.app"
    
@@ -201,7 +201,7 @@ const portfolioArray = [
     name: "La Galera",
     color: "#9AB7D3",
     image: "/lagaleracel.png",
-    brief: "Dely store online con diseño de interfaz dinamico para poder visualizar promociones de manera efectiva",
+    brief: "Dely store online con diseño de interfaz dinámico para poder visualizar promociones de manera efectiva",
     icons: { html: 1, css: 0, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 1, js: 0, google: 1, firebase: 1 },
     link: "https://lagalera.netlify.app"
   },
@@ -210,7 +210,7 @@ const portfolioArray = [
     name: "El Fuerte",
     color: "#FFDAC1",
     image: "/elfuertecel.png",
-    brief: "Web app para distribuidora mayorista. Se hizo foco en el diseño de un sistema de lista de precios agiles",
+    brief: "Web app para distribuidora mayorista. Se hizo foco en el diseño de un sistema de lista de precios ágiles",
     icons: { html: 1, css: 1, react: 1, node: 0, bootstrap: 0, mysql: 0, firebase: 0, sass: 0, js: 0, google: 1, next: 0, firebase: 0 },
     link: "https://www.mayoristaelfuerte.com",
 

@@ -21,9 +21,9 @@ const gallego = {
 
    alcance: {
 
-      resumen: `Pagina web institucional a medida, contemplando
+      resumen: `Pagina web institucional hecha a medida, contemplando
       las mejores prácticas de diseño e usabilidad.
-      teniendo como referencia CeroliniFerrari / Estudio Ofarrel. `,
+      Teniendo como referencia CeroliniFerrari / Estudio Ofarrel / mhrLegal `,
 
       detalle: [
          `Sección principal`,
@@ -46,15 +46,15 @@ const gallego = {
        de afuera. Se define a grandes rasgos cual es la identidad que se le va a dar a la web.`,
 
       prototipadoDuration: `15 dias `,
-      prototipado: ` Se monta un prototipo con informacion de muestra de la pagina principal 
-      para poder ver el look and feel de la web. Se discute cualquier ajuste que se pueda hacer `,
+      prototipado: ` Se monta un prototipo con información de muestra de la página principal 
+      para poder ver el look and feel de la web. Se discute cualquier ajuste que sea necesario `,
 
       betaDuration: `10 dias`,
-      beta: `Se construye toda la web a un 80%. se definen ulitmos ajustes. Recibimos la informacio 
-      que quedara en la pagina`,
+      beta: `Se construye toda la web a un 80%. Se definen ulitmos ajustes. Recibimos la información
+      en detalle que será incluida en la web`,
 
       lanzamientoDuration: `3 dias`,
-      lanzamiento: `Se lanza la web en el dominio deseado. `
+      lanzamiento: `Se lanza la web en el dominio deseado.`
    },
 
    presupuesto: {
