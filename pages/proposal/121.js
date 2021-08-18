@@ -54,9 +54,9 @@ const Proposal = () => {
          <title>KALE</title>
          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
          <meta name="description" content="agencia creativa digital" />
-         <meta property="og:title" content="kaleindex" />
-         <meta property="og:description" content="agencia creativa digital" />
-         <meta property="og:image" content="./kaleillustration.jpg" />
+         <meta property="og:title" content="KALEINDEX" />
+         <meta property="og:description" content="Agencia creativa digital" />
+         <meta property="og:image" content="/kaleillustration.jpg" />
       </Head>
       {
          showIntro
