@@ -1,5 +1,6 @@
 const gallego = {
    number: "121",
+<<<<<<< HEAD
    Bienvenidos: 
    `
 
@@ -14,6 +15,15 @@ const gallego = {
    // y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
    // Esperamos poder realizar este proyecto con ustedes!
    //  `
+=======
+   bienvenidos: `Hola, gracias por considerarnos.
+   sabemos que  necesitas tu pagina funcionando cuanto antes.
+    Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
+   y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
+   Esperamos poder realizar este proyecto con ustedes!
+    `
+
+>>>>>>> 6a6055838643c59dbb15313c3cf4380d5633048f
    ,
 
 
@@ -21,7 +31,7 @@ const gallego = {
 
    alcance: {
 
-      resumen: `Pagina web a medida institucional a medida, contemplando
+      resumen: `Pagina web institucional a medida, contemplando
       las mejores practicas de diseño e usabilidad.
       teniendo como referencia CeroliniFerrari / Estudio Ofarrel. `,
 
