@@ -103,8 +103,6 @@ const Proposal = () => {
                      page1[0] ?
                         <div className={ss.bienvenidos}>
                            <h3> </h3>
-<<<<<<< HEAD
-                        
                            <br/>
                            <div>Nos alegra que nos hayan tenido en cuenta!</div>
                            <br/>
@@ -112,10 +110,8 @@ const Proposal = () => {
                            <br/>
                            {pp.Bienvenidos}
                            <br/>
+                           <br/>
                            <div>Esperamos poder trabajar juntos!</div>
-=======
-                           {pp.bienvenidos}
->>>>>>> 6a6055838643c59dbb15313c3cf4380d5633048f
                            {/* <h3> Ustedes</h3>
                {pp.ustedes}  */}
                         </div>

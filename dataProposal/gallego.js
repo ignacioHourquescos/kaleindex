@@ -1,10 +1,9 @@
 const gallego = {
    number: "121",
-<<<<<<< HEAD
    Bienvenidos: 
    `
 
-   Creemos que la participacion del cliente es fundamental para generar procesos agiles y 
+   Creemos que la participación del cliente es fundamental para generar procesos ágiles y 
   un producto diferencial, que es lo que siempre buscamos.`
    
 
@@ -15,15 +14,6 @@ const gallego = {
    // y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
    // Esperamos poder realizar este proyecto con ustedes!
    //  `
-=======
-   bienvenidos: `Hola, gracias por considerarnos.
-   sabemos que  necesitas tu pagina funcionando cuanto antes.
-    Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
-   y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
-   Esperamos poder realizar este proyecto con ustedes!
-    `
-
->>>>>>> 6a6055838643c59dbb15313c3cf4380d5633048f
    ,
 
 
@@ -32,7 +22,7 @@ const gallego = {
    alcance: {
 
       resumen: `Pagina web institucional a medida, contemplando
-      las mejores practicas de diseño e usabilidad.
+      las mejores prácticas de diseño e usabilidad.
       teniendo como referencia CeroliniFerrari / Estudio Ofarrel. `,
 
       detalle: [
@@ -52,10 +42,8 @@ const gallego = {
 
    etapas: {
       investigacionDuration: `5 dias`,
-      investigacion: `Etapa en la que buscamos referencias. Tanto de estudios colegas como de paginas
-       de afuera. Se define a grandes rasgos cual es la identidad que se le va a dar a la web. Coposicion gráfica
-       ,
-       informacion,`,
+      investigacion: `Etapa en la que buscamos referencias. Tanto de estudios colegas como de páginas
+       de afuera. Se define a grandes rasgos cual es la identidad que se le va a dar a la web.`,
 
       prototipadoDuration: `15 dias `,
       prototipado: ` Se monta un prototipo con informacion de muestra de la pagina principal 
@@ -65,7 +53,7 @@ const gallego = {
       beta: `Se construye toda la web a un 80%. se definen ulitmos ajustes. Recibimos la informacio 
       que quedara en la pagina`,
 
-      lanzamientoDuration: `5 dias`,
+      lanzamientoDuration: `3 dias`,
       lanzamiento: `Se lanza la web en el dominio deseado. `
    },
 
