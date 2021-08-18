@@ -1,12 +1,19 @@
 const gallego = {
    number: "121",
-   Bienvenidos: `Hola, gracias por considerarnos.
-   sabemos que  necesitas tu pagina funcionando cuanto antes.
-    Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
-   y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
-   Esperamos poder realizar este proyecto con ustedes!
-    `
+   Bienvenidos: 
+   `
 
+   Creemos que la participacion del cliente es fundamental para generar procesos agiles y 
+  un producto diferencial, que es lo que siempre buscamos.`
+   
+
+   
+   // gracias por considerarnos.
+   // sabemos que  necesitas tu pagina funcionando cuanto antes.
+   //  Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
+   // y asi poder construir un producto de valor diferencial. A continuacion encontraran los detalles de su proyecto y el valor del mismo.
+   // Esperamos poder realizar este proyecto con ustedes!
+   //  `
    ,
 
 

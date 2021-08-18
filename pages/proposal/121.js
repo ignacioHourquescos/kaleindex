@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import pp from '../../dataProposal/gallego'
 import ss from './index.module.scss'
 import Head from 'next/head'
@@ -12,6 +12,10 @@ const Proposal = () => {
    const [counter, setCounter] = useState(0);
    const router = useRouter();
    var categoryParams = router.query.slug;
+
+   useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [page1])
 
    const triggerCounter = (indication) => {
       if (indication == "down" && counter == 0) {
@@ -87,7 +91,7 @@ const Proposal = () => {
                   </div>
 
                   <div className={ss.navMenu} >
-                     <div style={page1[0] ? { borderBottom: "5px solid #3CCD9D" } : { borderLine: "none" }} onClick={() => setActivePage(0)}>intro</div>
+                     <div style={page1[0] ? { borderBottom: "5px solid #3CCD9D" } : { borderLine: "none" }} onClick={() => setActivePage(0)}>Hola!</div>
                      <div style={page1[1] ? { borderBottom: "5px solid #3CCD9D" } : { borderLine: "none" }} onClick={() => setActivePage(1)}>El proyecto</div>
                      <div style={page1[2] ? { borderBottom: "5px solid #3CCD9D" } : { borderLine: "none" }} onClick={() => setActivePage(2)}>Etapas</div>
                      <div style={page1[3] ? { borderBottom: "5px solid #3CCD9D" } : { borderLine: "none" }} onClick={() => setActivePage(3)}>Presupuesto</div>
@@ -97,9 +101,17 @@ const Proposal = () => {
                <div className={ss.container_detail}>
                   {
                      page1[0] ?
-                        <div>
+                        <div className={ss.bienvenidos}>
                            <h3> </h3>
+                        
+                           <br/>
+                           <div>Nos alegra que nos hayan tenido en cuenta!</div>
+                           <br/>
+                           <div>Aca podran conocer la propuesta del proyecto con los tiempos, etapas y valores</div>
+                           <br/>
                            {pp.Bienvenidos}
+                           <br/>
+                           <div>Esperamos poder trabajar juntos!</div>
                            {/* <h3> Ustedes</h3>
                {pp.ustedes}  */}
                         </div>
@@ -116,9 +128,9 @@ const Proposal = () => {
                               <div>
                                  <h3> Investigacion ({pp.etapas.investigacionDuration})</h3>
                                  {pp.etapas.investigacion}
-                                 <h3> Prototipado ({pp.etapas.prototipadoDuration})</h3>
+                                 <h3> Prototipo ({pp.etapas.prototipadoDuration})</h3>
                                  {pp.etapas.prototipado}
-                                 <h3> Beta ({pp.etapas.betaDuration})</h3>
+                                 <h3> Primer Version ({pp.etapas.betaDuration})</h3>
                                  {pp.etapas.beta}
                                  <h3> Lanzamiento ({pp.etapas.lanzamientoDuration})</h3>
                                  {pp.etapas.lanzamiento}

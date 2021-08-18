@@ -43,13 +43,7 @@
 
       }
    }
-   .arrow_forward{
-      
 
-   }
-   .arrow_backwards{
-    
-   }
 
 .navMenu{
    display: flex;
@@ -74,6 +68,13 @@
       padding:0 1rem;
       max-width:900px;
       margin:0 auto;
+
+      .bienvenidos{
+         // text-align:center;
+         color:rgb(27, 27, 27);
+         font-weight: bold;
+         font-size:1rem;
+      }
    }
 
 }
