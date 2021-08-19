@@ -15,10 +15,10 @@ const Home = () => {
       <Head>
         <title>KALE</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="agencia creativa digital" />
-        <meta property="og:title" content="kaleindex" />
-        <meta property="og:description" content="agencia creativa digital" />
-        <meta property="og:image" content="/kaleillustration.jpg" />
+        <meta name="description" content="Agencia creativa digital" />
+        <meta property="og:title" content="KALEindex" />
+        <meta property="og:description" content="Agencia creativa digital." />
+        <meta property="og:image" content="/kaleog.jpg" />
       </Head>
       <section style={{ scrollSnapAlign: "center" }}>
         <Header />
