@@ -150,7 +150,7 @@ const Proposal = () => {
                                     <h3>Condiciones</h3>
                                     <li>Pago 50% para comenzar, 50% al finalizar.</li>
                                     <li>Se emite factura C.</li>
-                                    <div>. </div>
+                                    <li>Validez del presupuesto 15 días. (desde 18/8/21).</li>
                                  </div>
 
                                  : ""
