@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react'
-import pp from '../../dataProposal/casaCelu'
+import pp from '../../dataProposal/biacco'
 import ss from './index.module.scss'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -129,8 +129,8 @@ const Proposal = () => {
                               <div>
                                  <h3> Investigación ({pp.etapas.investigacionDuration})</h3>
                                  {pp.etapas.investigacion}
-                                 <h4 style={{marginLeft: "0.5em"}}>Recursos</h4>
-                                 {pp.etapas.recursos.map(item => <li key={item} style={{marginLeft: "0.5em"}}>{item}</li>)}
+                                 <h4 style={{marginLeft: "0.7em"}}>Recursos</h4>
+                                 {pp.etapas.recursos.map(item => <li key={item} style={{marginLeft: "0.8em"}}>{item}</li>)}
                                  <h3> Prototipo ({pp.etapas.prototipadoDuration})</h3>
                                  {pp.etapas.prototipado}
                                  <h3> Primer Versión ({pp.etapas.betaDuration})</h3>
@@ -141,7 +141,7 @@ const Proposal = () => {
                               </div>
                               : page1[3] ?
                                  <div>
-                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigación</h3>{pp.presupuesto.investigacion}</div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigación + hs cliente</h3>{pp.presupuesto.investigacion}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Diseño</h3>{pp.presupuesto.diseño}</div>
                                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
                                     <div style={{backgroundColor:"#3CCD9D", color:"white", padding:"0.5rem"}}> Presupuesto Total: ${pp.presupuesto.valor} pesos</div>
@@ -150,7 +150,7 @@ const Proposal = () => {
                                     <h3>Condiciones</h3>
                                     <li>Pago 50% para comenzar, 50% al finalizar.</li>
                                     <li>Se emite factura C.</li>
-                                    <li>Validez del presupuesto 15 días. (desde 18/8/21).</li>
+                                    <div>. </div>
                                  </div>
 
                                  : ""
@@ -159,6 +159,7 @@ const Proposal = () => {
                </div>
             </div>
       }
+
 
 
 

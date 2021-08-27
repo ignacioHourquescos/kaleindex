@@ -1,13 +1,13 @@
 const casaCelu = {
     number: "122cdC",
-    Bienvenidos: 
-    `
+    Bienvenidos:
+        `
  
     Creemos que la participación del cliente es fundamental para generar procesos ágiles y 
    un producto diferencial, que es lo que siempre buscamos.`
-    
- 
-    
+
+
+
     // gracias por considerarnos.
     // sabemos que  necesitas tu pagina funcionando cuanto antes.
     //  Nuestra participacion tanto como la de ustedes  es fundamental para que los procesos sean agiles y dinamicos
@@ -20,12 +20,13 @@ const casaCelu = {
 
     alcance: {
 
-        resumen: `Página web institucional a medida, ampliable a e-commerce contemplando
+        resumen: `Renovacion de imagen web institucional a medida, buscando un aspecto
+        mas moderno y atractivo contemplando
        las mejores prácticas de diseño y usabilidad.`,
 
         detalle: [
             `Sección principal.`,
-            `Sección galeria de productos.`,
+            `Sección servicios.`,
             `Sección quiénes somos.`,
             `Formulario de contacto.`,
             `Botón flotante de wpp.`,
@@ -33,16 +34,15 @@ const casaCelu = {
         tecnico: [
             `Desarrollo hecho a medida, utilizando HTML5, CSS, y JavaScript.`,
             `Diseño 100% responsivo (adaptable a todas las pantallas).`,
-            `Sección galeria de productos autoadministrable.`,
             `Optimizado para motores de búsqueda.`,
         ],
     },
 
     etapas: {
         investigacionDuration: `5 días`,
-        investigacion: `Etapa en la que buscamos referencias. Tanto de negocios locales como de páginas
-        de afuera. Se define a grandes rasgos cuál es la identidad que se le va a dar a la web. Composición gráfica
-        , paleta de colores, estilos. Pára que esta etapa se de por finalizada necesitamos contar con el siguiente material.`,
+        investigacion: `Etapa en la que buscamos referencias de empresas del rubro tanto locales como extranjeras.
+        Se define en conjunto y a grandes rasgos cuál es la identidad que se le va a dar a la web. Composición gráfica
+        , paleta de colores, estilos. Pára que esta etapa se de por finalizada necesitamos contar con el siguiente material:`,
         recursos: [
             `Identidad empresarial`,
             `Imágenes`,
@@ -62,13 +62,13 @@ const casaCelu = {
     },
 
     presupuesto: {
-        investigacion: `5 hrs`,
+        investigacion: `8 hrs`,
 
-        diseño: `25 hrs`,
+        diseño: `18 hrs`,
 
-        desarollo: `20 hrs`,
+        desarollo: `13 hrs`,
 
-        valor: `40000`,
+        valor: `37.050`,
 
         noIncluye: [
             `Dominio`,
