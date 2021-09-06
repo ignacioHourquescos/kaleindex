@@ -141,14 +141,14 @@ const Proposal = () => {
                               </div>
                               : page1[3] ?
                                  <div>
-                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Investigación + hs cliente</h3>{pp.presupuesto.investigacion}</div>
-                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Diseño</h3>{pp.presupuesto.diseño}</div>
-                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "inline" }}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
-                                    <div style={{backgroundColor:"#3CCD9D", color:"white", padding:"0.5rem"}}> Presupuesto Total: ${pp.presupuesto.valor} pesos</div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "none" }}> Investigación + hs cliente</h3>{pp.presupuesto.investigacion}</div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "none" }}> Diseño</h3>{pp.presupuesto.diseño}</div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}><h3 style={{ display: "none" }}> Desarollo</h3>{pp.presupuesto.desarollo}</div>
+                                    <div style={{backgroundColor:"#bef4cb",fontWeight:"bold", color:"black",marginTop:"2em", padding:"0.5rem"}}> Presupuesto Total: ${pp.presupuesto.valor} pesos</div>
                                     <h3>NO incluye</h3>
                                     {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                     <h3>Condiciones</h3>
-                                    <li>Pago 50% para comenzar, 50% al finalizar.</li>
+                                    <li>Pago en 3 cuotas (1 Comienzo 40% | 2 Prototipo final 30% | 3 Web final 30%)</li>
                                     <li>Se emite factura C.</li>
                                     <div>. </div>
                                  </div>
