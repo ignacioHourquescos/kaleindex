@@ -66,7 +66,7 @@ const gallego = {
 
       /* desarollo: `20 hrs`, */
 
-      valor: `40000`,
+      valor: `45000`,
 
       noIncluye: [
          `Dominio`,
