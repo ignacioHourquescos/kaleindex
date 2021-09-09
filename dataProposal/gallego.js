@@ -31,6 +31,8 @@ const gallego = {
          `Sección Nuestros servicios`,
          `Sección Publicaciones`,
          `Formulario de contacto`,
+
+         `Brochure PDF`,
       ],
       tecnico: [
          `Diseño hecho a medida, utilizando HTML5, CSS, y Java Script`,
@@ -58,11 +60,11 @@ const gallego = {
    },
 
    presupuesto: {
-      investigacion: `5 hrs`,
+      /* investigacion: `5 hrs`, */
 
-      diseño: `25 hrs`,
+      /* diseño: `25 hrs`, */
 
-      desarollo: `20 hrs`,
+      /* desarollo: `20 hrs`, */
 
       valor: `45000`,
 
