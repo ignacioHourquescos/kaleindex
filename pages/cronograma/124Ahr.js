@@ -17,8 +17,8 @@ const ActtumPre = () => {
          <meta property="og:image" content="/kaleillustration.jpg" />
       </Head>
      
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTC5STAGWeRes6j2IRspTocjzm7YsOcNMEMUkHBl0nCk0SPsGQkSx0aMdoO7vzuDarZkJYGTaAwpqFh/pubhtml?gid=909818325&amp;single=true&amp;widget=true&amp;rm=minimal&amp;headers=false"
-          
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTNyEKqamPplcYCBplPLeHQzG9uztA_dApvbi9QjtKJEFCpuxl_-4FYtY57JR4NpOMlp4x2gP2uwAa/pubhtml?gid=909818325&amp;single=true&amp;widget=true&amp;rm=minimal&amp;headers=false"
+
    style={{height:"100vh", width:"100%", overflowY: "hidden"}}></iframe>
 
    
