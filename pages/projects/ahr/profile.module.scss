@@ -1,0 +1,21 @@
+.c7 {
+   padding:0 !important;
+}
+
+
+.container{
+   width:100%;
+   height:15vh;
+   color:white;
+   background-color: #3ccd9d;
+   display:flex;
+   justify-content: flex-start;
+   justify-items: flex-start;
+   align-content: center;
+   font-size: 2rem;
+   font-weight: bold;
+   span{
+      margin:auto 0.5rem;
+   }
+
+}
