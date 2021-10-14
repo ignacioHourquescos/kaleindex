@@ -81,7 +81,7 @@ const Proposal = () => {
 
                      <div className={ss.title}>
                         <p>PRESUPUESTO</p>
-                        <p><p style={{ color: "#3CCD9D", display: "inline" }}>KALE</p>INDEX</p>
+                        <p><span style={{ color: "#3CCD9D", display: "inline" }}>KALE</span>INDEX</p>
                      </div>
 
                      {
