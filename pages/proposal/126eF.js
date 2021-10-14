@@ -151,7 +151,7 @@ const Proposal = () => {
                                     <h3>NO incluye</h3>
                                     {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                     <h3>Condiciones</h3>
-                                    <li>Pago en 3 cuotas (1 Comienzo 50% | 2 Lanzamiento al publico 50%)</li>
+                                    <li>Pago en 2 cuotas (1 Comienzo 50% | 2 Lanzamiento al publico 50%)</li>
                                     <li>Se emite factura C.</li>
                                     <div>. </div>
                                  </div>
