@@ -61,8 +61,9 @@ const Proposal = () => {
       {
          showIntro
             ?
+            
             <div className={ss.intro}>
-               <h2><h2 style={{ color: "#3CCD9D", display: "inline" }}>KALE</h2>INDEX</h2>
+               <h2><span style={{color: "#3CCD9D", display: "inline" }}>KALE</span>INDEX</h2>
                <p>Combinamos innovación, lógica y diseño para crear productos digitales de alto valor agregado. Siempre abiertos a nuevos desafíos!</p>
                <button onClick={() => setShowIntro(false)}>VER PRESUPUESTO</button>
                <button style={{border:"1px solid #3CCD9D", color:"#3CCD9D"}}><Link href="/">OTROS TRABAJOS</Link></button>
@@ -160,7 +161,10 @@ const Proposal = () => {
 
                </div>
             </div>
+            
       }
+
+
 
 
 
