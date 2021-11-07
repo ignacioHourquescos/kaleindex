@@ -111,7 +111,8 @@ const Card = () => {
                       <motion.div variants={item}>{element.icons.bootstrap == 1 ? <FaBootstrap size={27} color="#3f3c3c" /> : ""}  </motion.div>
                       <motion.div variants={item}>{element.icons.mysql == 1 ? <FaDatabase size={27} color="#3f3c3c" /> : ""}  </motion.div>
                       <motion.div variants={item}>{element.icons.google == 1 ? <FaGoogle size={27} color="#3f3c3c" /> : ""} </motion.div>
-                      <motion.div variants={item}>{element.icons.next == 1 ? <SiNextDotJs size={27} color="#3f3c3c" /> : ""} </motion.div>
+                      {/* <motion.div variants={item}>{element.icons.next == 1 ? <SiNextDotJs size={27} color="#3f3c3c" /> : ""} </motion.div> */}
+                      <motion.div variants={item}>{element.icons.next == 1 ? "" : ""} </motion.div>
                       <motion.div variants={item}>{element.icons.firebase == 1 ? <SiFirebase size={27} color="#3f3c3c" /> : ""} </motion.div>
                     </FadeInWhenVisible>
                   </motion.div>
