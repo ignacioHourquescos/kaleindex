@@ -111,9 +111,16 @@
    button{
       border-radius:15px;
       background-color:transparent;
-      border:1px solid grey;
+      border:2px solid grey;
       padding:0.8rem;
       margin-bottom:1rem;
+      font-weight: 400;
+      width:30%;
+      @media only screen and (max-width: 600px) {
+   
+         width:80%;
+       
+       }
       
    }
 
