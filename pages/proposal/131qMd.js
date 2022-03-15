@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react'
-import pp from '../../dataProposal/bukma'
+import pp from '../../dataProposal/qualimed'
 import ss from './index.module.scss'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -107,7 +107,7 @@ const Proposal = () => {
                            <br/>
                            <div>Nos alegra que nos hayan tenido en cuenta!</div>
                            <br/>
-                           <div>Aca podrán conocer la propuesta del proyecto con las etapas y valores.</div>
+                           <div>Aca podrán conocer la propuesta del proyecto con los tiempos, etapas y valores.</div>
                            <br/>
                            {pp.Bienvenidos}
                            <br/>
@@ -128,15 +128,15 @@ const Proposal = () => {
                            </div>
                            : page1[2] ?
                               <div>
-                                 <h3> Investigación ({pp.etapas.investigacionDuration})</h3>
+                                 <h3> Investigación </h3>
                                  {pp.etapas.investigacion}
                                  <h4 style={{marginLeft: "0.7em"}}>Recursos</h4>
                                  {pp.etapas.recursos.map(item => <li key={item} style={{marginLeft: "0.8em"}}>{item}</li>)}
-                                 <h3> Prototipo ({pp.etapas.prototipadoDuration})</h3>
+                                 <h3> Diseño </h3>
                                  {pp.etapas.prototipado}
-                                 <h3> Primer Versión ({pp.etapas.betaDuration})</h3>
+                                 <h3> Desarrollo </h3>
                                  {pp.etapas.beta}
-                                 <h3> Lanzamiento ({pp.etapas.lanzamientoDuration})</h3>
+                                 <h3> Lanzamiento </h3>
                                  {pp.etapas.lanzamiento}
                                  <div>. </div>
                               </div>
@@ -149,7 +149,7 @@ const Proposal = () => {
                                     <h3>NO incluye</h3>
                                     {pp.presupuesto.noIncluye.map(item => <li key={item}>{item}</li>)}
                                     <h3>Condiciones</h3>
-                                    <li>Pago en 2 cuotas (Comienzo 50% | Lanzamiento 50%)</li>
+                                    <li>Pago en 2 cuotas (Comienzo 30% | Lanzamiento 70%)</li>
                                     <li>Se emite factura C.</li>
                                     <div>. </div>
                                  </div>
