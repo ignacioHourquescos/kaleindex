@@ -16,9 +16,9 @@ const qualimed = {
 
     alcance: {
 
-        resumen: `Diseño y desarollo de pagina web para Qualimed, con integracion al sistema de factutracion RP, para la seccion de productos. 
+        resumen: `Diseño y desarollo de pagina web para Qualimed, con integracion al sistema de facturacion RP, para la seccion de productos. 
         Dicha sección estara integrada con las fichas de productos del sistema, con el fin de tener la información centralizada en un solo lugar.
-        El alcance en esta instancia es la de mostrar el contenido de campos descirptivos (codigo, descripcion, descripcion adicional, categorias, etc),
+        El alcance en esta instancia es la de mostrar el contenido de campos descriptivos (codigo, descripcion, descripcion adicional, categorias, etc),
         sin entrar en el detalle de precios, descuentos o similares.`,
 
         detalle: [
@@ -30,7 +30,7 @@ const qualimed = {
         tecnico: [
             `Desarrollo hecho a medida, utilizando HTML5, CSS, y JavaScript.`,
             `Diseño 100% responsivo (adaptable a todas las pantallas).`,
-            `Back-end en Node.Js`,
+            `Back-End en Node.js con conexion a base de datos SQL de RP sistemas`,
             `Optimizado para motores de búsqueda.`,
         ],
     },
@@ -70,6 +70,7 @@ const qualimed = {
         noIncluye: [
             `Dominio`,
             `Hosting`,
+            `Servidor de Back-End`,
             `E-mail corporativo`,
         ],
     },
