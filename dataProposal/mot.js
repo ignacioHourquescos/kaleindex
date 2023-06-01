@@ -33,7 +33,7 @@ const acttum = {
             
         ],
         tecnico: [
-            `Material audivisual diseñado en Figma y.`,
+            `Material audivisual diseñado en Figma y CapCut.`,
             `Desarrollo web hecho a medida, utilizando HTML5, CSS, y JavaScript.`
             ],
     },
